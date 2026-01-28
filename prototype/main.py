@@ -14,20 +14,22 @@ HAS_AVAILABILITY = URIRef(EX + "hasAvailability")
 AVAILABLE_FROM = URIRef(EX + "availableFrom")
 AVAILABLE_UNTIL = URIRef(EX + "availableUntil")
 
-students_path = data_directory + "students.ttl"
-classes_path = data_directory + "classes.ttl"
-rooms_path = data_directory + "rooms.ttl"
+def load_graph(path: Path) -> Graph:
+    graph = Graph()
+    graph.parse(str(path), format="turtle")
+    return graph
 
-students = load_graph(students_path)
-classes = load_graph(classes_path)
-rooms = load_graph(rooms_path)
+def main():
+    students_path = data_directory + "students.ttl"
+    classes_path = data_directory + "classes.ttl"
+    rooms_path = data_directory + "rooms.ttl"
 
-students.parse(, format="turtle")
-classes.parse(data_directory + "classes.ttl", format="turtle")
-rooms.parse(data_directory + "rooms.ttl", format="turtle")
+    students = load_graph(students_path)
+    classes = load_graph(classes_path)
+    rooms = load_graph(rooms_path)
 
-for subject, group in groupby(students.triples((None, None, None)), key=itemgetter(0)):
-    print(f"Subject: {subject}")
-    for subject, predicate, obj in group:
-        print(f"    {predicate} : {obj}")
+    # Enrollment counts -> Dict[URIRef, int]
+    # Rooms list
+    # Courses list
 
+    # Greedy algorithm
