@@ -1,7 +1,6 @@
 # GreedyGraphScheduling
 <p id="top"></p>
-<br><b><i>I hand picked these mojis this is not AI slop</i></b></br>
-Notebooks I am using to prepare for my machine learning final
+Greedy Graph Scheduling for DevNet
 
 <details open="open">
   <summary>Table of Contents</summary>
