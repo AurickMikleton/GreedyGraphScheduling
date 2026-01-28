@@ -2,6 +2,10 @@ from rdflib import Graph, URIRef
 from itertools import groupby
 from operator import itemgetter
 from datetime import datetime
+from dataclasses import dataclass
+
+from pathlib import Path
+from typing import Dict, List, Tuple
 
 data_directory = "../data/"
 
