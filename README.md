@@ -21,8 +21,8 @@ Greedy Graph Scheduling for DevNet
 <h2 id="pre"> :gear: Preprocessing </h2>
 <hr style="border: 1px solid black; width: 50%;">
 <h3 id="Notebook1"> :pencil: Data Loading</h3>
-<p> This notebook shows the simplicity and beauty of data loaders in pytorch </p>
-<a href="https://github.com/b3nhaddad/TorchPracticeNotebooks/blob/main/TorchPractice.ipynb">Notebook 1</a>
+<p> This portion is for loading code </p>
+<a href="">Notebook 1</a>
 
 
 <h2 id="CNNs"> :milky_way: CNN Architecture</h2>
