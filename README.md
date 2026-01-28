@@ -25,7 +25,7 @@ Greedy Graph Scheduling for DevNet
 <a href="">Notebook 1</a>
 
 
-<h2 id="CNNs"> :milky_way: CNN Architecture</h2>
+<h2 id="CNNs"> :milky_way: Greedy Algorithim</h2>
 <hr style="border: 1px solid black; width: 50%;">
 <h3 id="Notebook2"> :pencil: CNN Kernel building</h3>
 <p> This notebook begans by building a defautl kernal and processing data read in from OpenCV</p>
@@ -33,7 +33,7 @@ Greedy Graph Scheduling for DevNet
 Notebook 2
 </a>
 
-<h3 id="Notebook3"> :pencil: Min/Max pooling for CNNs</h3>
+<h3 id="Notebook3"> :pencil: Results</h3>
 <p> Uses openCV and array slicing to buld a Min and Max pooling layer</p>
 <a href="https://github.com/b3nhaddad/TorchPracticeNotebooks/blob/main/CV_Max_Min_pool.ipynb">
 Notebook 3
