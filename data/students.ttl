@@ -1,0 +1,1505 @@
+@prefix ex:     <http://example.org/> .
+@prefix schema: <http://schema.org/> .
+###############################################
+# Students (Randomly Generated)
+###############################################
+ex:_Lillian_Blair a ex:Person ;
+  schema:name "Blair, Lillian" ;
+  ex:enrolledIn ex:CS101, ex:HIST305, ex:CHEM101, ex:MATH350 .
+ex:_Stephen_Ward a ex:Person ;
+  schema:name "Ward, Stephen" ;
+  ex:enrolledIn ex:HIST110, ex:MATH101, ex:CHEM101 .
+ex:_Jade_Gallagher a ex:Person ;
+  schema:name "Gallagher, Jade" ;
+  ex:enrolledIn ex:CS220, ex:MATH240, ex:ECON330 .
+ex:_Heather_Garcia a ex:Person ;
+  schema:name "Garcia, Heather" ;
+  ex:enrolledIn ex:CHEM101, ex:PSY101, ex:CS101, ex:ECON101, ex:ENG101 .
+ex:_Hope_Chandler a ex:Person ;
+  schema:name "Chandler, Hope" ;
+  ex:enrolledIn ex:STAT200, ex:ENG101, ex:CHEM101 .
+ex:_Blake_Russell a ex:Person ;
+  schema:name "Russell, Blake" ;
+  ex:enrolledIn ex:PSY330, ex:CS220, ex:CHEM250 .
+ex:_Kathleen_Diaz a ex:Person ;
+  schema:name "Diaz, Kathleen" ;
+  ex:enrolledIn ex:STAT410, ex:CS101, ex:PHYS101 .
+ex:_Jean_Kingsley a ex:Person ;
+  schema:name "Kingsley, Jean" ;
+  ex:enrolledIn ex:CS220, ex:PSY101 .
+ex:_Martin_Nelson a ex:Person ;
+  schema:name "Nelson, Martin" ;
+  ex:enrolledIn ex:CHEM101, ex:ENG101, ex:PHYS101 .
+ex:_Evelyn_Hastings a ex:Person ;
+  schema:name "Hastings, Evelyn" ;
+  ex:enrolledIn ex:CS310, ex:MATH350, ex:ENG101 .
+ex:_Taylor_Hill a ex:Person ;
+  schema:name "Hill, Taylor" ;
+  ex:enrolledIn ex:CS310, ex:PHYS220, ex:CS101, ex:STAT410 .
+ex:_Xavier_Fairchild a ex:Person ;
+  schema:name "Fairchild, Xavier" ;
+  ex:enrolledIn ex:PHYS220, ex:CHEM250, ex:HIST110 .
+ex:_Margaret_Bryant a ex:Person ;
+  schema:name "Bryant, Margaret" ;
+  ex:enrolledIn ex:HIST110, ex:CS101, ex:HIST305, ex:ECON330, ex:ENG101 .
+ex:_Jack_Kendrick a ex:Person ;
+  schema:name "Kendrick, Jack" ;
+  ex:enrolledIn ex:PSY330, ex:CHEM101, ex:PHYS220 .
+ex:_Jennifer_Hill a ex:Person ;
+  schema:name "Hill, Jennifer" ;
+  ex:enrolledIn ex:STAT200, ex:CS310, ex:MATH240, ex:PSY101, ex:HIST110 .
+ex:_Hope_Griffin a ex:Person ;
+  schema:name "Griffin, Hope" ;
+  ex:enrolledIn ex:ECON101, ex:ENG410, ex:PHYS220, ex:CS310, ex:ENG101 .
+ex:_Hailey_Caldwell a ex:Person ;
+  schema:name "Caldwell, Hailey" ;
+  ex:enrolledIn ex:HIST305, ex:ECON330, ex:CS101, ex:MATH101, ex:ECON101 .
+ex:_Emma_Foster a ex:Person ;
+  schema:name "Foster, Emma" ;
+  ex:enrolledIn ex:CHEM250, ex:PHYS101, ex:CS220, ex:HIST305, ex:ENG101 .
+ex:_Raymond_Scott a ex:Person ;
+  schema:name "Scott, Raymond" ;
+  ex:enrolledIn ex:CHEM101, ex:CS101, ex:CS220 .
+ex:_Madeline_Wood a ex:Person ;
+  schema:name "Wood, Madeline" ;
+  ex:enrolledIn ex:MATH240, ex:HIST305, ex:HIST110, ex:ENG410 .
+ex:_Jason_Halloway a ex:Person ;
+  schema:name "Halloway, Jason" ;
+  ex:enrolledIn ex:MATH240, ex:HIST305, ex:MATH350, ex:ENG101 .
+ex:_Ashley_Jackson a ex:Person ;
+  schema:name "Jackson, Ashley" ;
+  ex:enrolledIn ex:ECON330, ex:PSY330, ex:ECON101, ex:ENG101, ex:CS220 .
+ex:_Lucas_Wilson a ex:Person ;
+  schema:name "Wilson, Lucas" ;
+  ex:enrolledIn ex:ENG101, ex:PHYS220, ex:MATH101, ex:MATH240, ex:ENG410 .
+ex:_Isaiah_Perez a ex:Person ;
+  schema:name "Perez, Isaiah" ;
+  ex:enrolledIn ex:MATH350, ex:STAT410, ex:ENG101, ex:PSY101 .
+ex:_Anna_Russell a ex:Person ;
+  schema:name "Russell, Anna" ;
+  ex:enrolledIn ex:STAT410, ex:ENG101, ex:HIST305, ex:MATH350 .
+ex:_Scott_Wood a ex:Person ;
+  schema:name "Wood, Scott" ;
+  ex:enrolledIn ex:ECON330, ex:CS220, ex:STAT410, ex:HIST305 .
+ex:_Noah_Sterling a ex:Person ;
+  schema:name "Sterling, Noah" ;
+  ex:enrolledIn ex:MATH240, ex:ECON330, ex:HIST305, ex:ENG101 .
+ex:_Linda_Young a ex:Person ;
+  schema:name "Young, Linda" ;
+  ex:enrolledIn ex:CS220, ex:PHYS220 .
+ex:_Amy_Drake a ex:Person ;
+  schema:name "Drake, Amy" ;
+  ex:enrolledIn ex:ENG101, ex:CS220, ex:ENG410, ex:CS310, ex:MATH101 .
+ex:_Melissa_Whitmore a ex:Person ;
+  schema:name "Whitmore, Melissa" ;
+  ex:enrolledIn ex:CHEM250, ex:PHYS101, ex:STAT410, ex:PHYS220 .
+ex:_Dean_Walker a ex:Person ;
+  schema:name "Walker, Dean" ;
+  ex:enrolledIn ex:CHEM101, ex:ECON330, ex:STAT200, ex:ENG410, ex:CS220 .
+ex:_Cameron_Brighton a ex:Person ;
+  schema:name "Brighton, Cameron" ;
+  ex:enrolledIn ex:PHYS101, ex:CS101, ex:CS220, ex:MATH240, ex:MATH101 .
+ex:_Ivan_Radcliffe a ex:Person ;
+  schema:name "Radcliffe, Ivan" ;
+  ex:enrolledIn ex:MATH101, ex:ECON101, ex:STAT410 .
+ex:_Cameron_Nelson a ex:Person ;
+  schema:name "Nelson, Cameron" ;
+  ex:enrolledIn ex:CS220, ex:CHEM101, ex:ECON101, ex:PHYS220 .
+ex:_Brianna_Stanton a ex:Person ;
+  schema:name "Stanton, Brianna" ;
+  ex:enrolledIn ex:HIST305, ex:MATH240, ex:ENG410, ex:PHYS101 .
+ex:_Beth_Allenby a ex:Person ;
+  schema:name "Allenby, Beth" ;
+  ex:enrolledIn ex:ECON101, ex:PSY330, ex:MATH350 .
+ex:_Jennifer_Harris a ex:Person ;
+  schema:name "Harris, Jennifer" ;
+  ex:enrolledIn ex:HIST110, ex:MATH101, ex:ENG101, ex:ENG410, ex:PSY330 .
+ex:_Willow_Vaughn a ex:Person ;
+  schema:name "Vaughn, Willow" ;
+  ex:enrolledIn ex:ENG101, ex:STAT410, ex:CHEM101, ex:HIST110, ex:CS101 .
+ex:_Travis_Blair a ex:Person ;
+  schema:name "Blair, Travis" ;
+  ex:enrolledIn ex:CS310, ex:CHEM250, ex:PSY101, ex:PSY330 .
+ex:_Rebecca_Lee a ex:Person ;
+  schema:name "Lee, Rebecca" ;
+  ex:enrolledIn ex:STAT200, ex:CS310, ex:CHEM250 .
+ex:_Mark_Nichols a ex:Person ;
+  schema:name "Nichols, Mark" ;
+  ex:enrolledIn ex:HIST110, ex:MATH350, ex:PSY101, ex:MATH240 .
+ex:_Pamela_Williams a ex:Person ;
+  schema:name "Williams, Pamela" ;
+  ex:enrolledIn ex:HIST110, ex:CHEM250, ex:CS220, ex:MATH240 .
+ex:_Miles_Cook a ex:Person ;
+  schema:name "Cook, Miles" ;
+  ex:enrolledIn ex:STAT200, ex:ECON101 .
+ex:_Barbara_Nguyen a ex:Person ;
+  schema:name "Nguyen, Barbara" ;
+  ex:enrolledIn ex:CHEM101, ex:CS101, ex:HIST305, ex:PSY101 .
+ex:_Karen_Thornton a ex:Person ;
+  schema:name "Thornton, Karen" ;
+  ex:enrolledIn ex:CS220, ex:ECON330, ex:CS101, ex:HIST110 .
+ex:_Logan_Phillips a ex:Person ;
+  schema:name "Phillips, Logan" ;
+  ex:enrolledIn ex:MATH240, ex:ENG410, ex:MATH101, ex:CS310 .
+ex:_Gavin_Sinclair a ex:Person ;
+  schema:name "Sinclair, Gavin" ;
+  ex:enrolledIn ex:CHEM250, ex:ECON330, ex:HIST110, ex:CS101, ex:STAT410 .
+ex:_Avery_Taylor a ex:Person ;
+  schema:name "Taylor, Avery" ;
+  ex:enrolledIn ex:PSY330, ex:MATH101 .
+ex:_Barbara_Dempsey a ex:Person ;
+  schema:name "Dempsey, Barbara" ;
+  ex:enrolledIn ex:MATH350, ex:HIST110, ex:HIST305 .
+ex:_Danielle_Allenby a ex:Person ;
+  schema:name "Allenby, Danielle" ;
+  ex:enrolledIn ex:CS310, ex:HIST305 .
+ex:_Crystal_Scott a ex:Person ;
+  schema:name "Scott, Crystal" ;
+  ex:enrolledIn ex:CHEM101, ex:PHYS220, ex:MATH240, ex:CHEM250 .
+ex:_Blake_Fitzpatrick a ex:Person ;
+  schema:name "Fitzpatrick, Blake" ;
+  ex:enrolledIn ex:PHYS101, ex:STAT200, ex:CS310, ex:STAT410 .
+ex:_Bradley_Adams a ex:Person ;
+  schema:name "Adams, Bradley" ;
+  ex:enrolledIn ex:ENG101, ex:PHYS220, ex:PSY101, ex:ENG410, ex:MATH350 .
+ex:_Jordan_Sterling a ex:Person ;
+  schema:name "Sterling, Jordan" ;
+  ex:enrolledIn ex:ENG410, ex:CS101, ex:CS220, ex:ECON101 .
+ex:_Zoey_Collins a ex:Person ;
+  schema:name "Collins, Zoey" ;
+  ex:enrolledIn ex:ECON330, ex:PSY101, ex:CS220 .
+ex:_Gregory_Coleman a ex:Person ;
+  schema:name "Coleman, Gregory" ;
+  ex:enrolledIn ex:PHYS220, ex:ECON330, ex:MATH350, ex:ENG101 .
+ex:_Cynthia_Farrow a ex:Person ;
+  schema:name "Farrow, Cynthia" ;
+  ex:enrolledIn ex:MATH101, ex:STAT200, ex:PHYS101, ex:CS101 .
+ex:_Molly_Farrow a ex:Person ;
+  schema:name "Farrow, Molly" ;
+  ex:enrolledIn ex:HIST110, ex:MATH350 .
+ex:_Jasper_Anderson a ex:Person ;
+  schema:name "Anderson, Jasper" ;
+  ex:enrolledIn ex:CHEM250, ex:PSY101 .
+ex:_Diana_Richardson a ex:Person ;
+  schema:name "Richardson, Diana" ;
+  ex:enrolledIn ex:MATH350, ex:PHYS220, ex:PHYS101 .
+ex:_Julia_Allen a ex:Person ;
+  schema:name "Allen, Julia" ;
+  ex:enrolledIn ex:PHYS101, ex:HIST305, ex:STAT410, ex:PHYS220, ex:CS310 .
+ex:_Deborah_Jenkins a ex:Person ;
+  schema:name "Jenkins, Deborah" ;
+  ex:enrolledIn ex:ENG101, ex:CS101, ex:HIST305 .
+ex:_Claire_Robinson a ex:Person ;
+  schema:name "Robinson, Claire" ;
+  ex:enrolledIn ex:PHYS220, ex:PSY101, ex:STAT200, ex:CHEM250 .
+ex:_Yasmine_Drake a ex:Person ;
+  schema:name "Drake, Yasmine" ;
+  ex:enrolledIn ex:ENG101, ex:MATH240 .
+ex:_Victoria_Thayer a ex:Person ;
+  schema:name "Thayer, Victoria" ;
+  ex:enrolledIn ex:CS220, ex:CHEM101, ex:PHYS220 .
+ex:_Claudia_Drake a ex:Person ;
+  schema:name "Drake, Claudia" ;
+  ex:enrolledIn ex:STAT410, ex:ECON101, ex:PSY101, ex:MATH240, ex:ENG101 .
+ex:_Gail_Hernandez a ex:Person ;
+  schema:name "Hernandez, Gail" ;
+  ex:enrolledIn ex:MATH350, ex:STAT200, ex:CHEM250, ex:STAT410 .
+ex:_Cameron_Reed a ex:Person ;
+  schema:name "Reed, Cameron" ;
+  ex:enrolledIn ex:CHEM101, ex:ENG101, ex:HIST305, ex:PHYS220 .
+ex:_Jade_Adams a ex:Person ;
+  schema:name "Adams, Jade" ;
+  ex:enrolledIn ex:CS220, ex:CS101, ex:PSY330, ex:ENG101, ex:MATH240 .
+ex:_Logan_Allen a ex:Person ;
+  schema:name "Allen, Logan" ;
+  ex:enrolledIn ex:CS220, ex:ECON101, ex:HIST110, ex:HIST305, ex:MATH350 .
+ex:_Bonnie_Lennox a ex:Person ;
+  schema:name "Lennox, Bonnie" ;
+  ex:enrolledIn ex:CS101, ex:PHYS220, ex:PHYS101, ex:MATH350 .
+ex:_Julia_Reed a ex:Person ;
+  schema:name "Reed, Julia" ;
+  ex:enrolledIn ex:HIST110, ex:CS101, ex:STAT410, ex:ENG101, ex:PSY330 .
+ex:_Lucy_Moore a ex:Person ;
+  schema:name "Moore, Lucy" ;
+  ex:enrolledIn ex:HIST110, ex:ENG410, ex:PSY101, ex:STAT200, ex:ECON330 .
+ex:_Veronica_Butler a ex:Person ;
+  schema:name "Butler, Veronica" ;
+  ex:enrolledIn ex:CS220, ex:ENG410, ex:CS101, ex:STAT200, ex:MATH350 .
+ex:_Jamie_Richardson a ex:Person ;
+  schema:name "Richardson, Jamie" ;
+  ex:enrolledIn ex:HIST110, ex:CHEM101, ex:STAT410, ex:ENG410 .
+ex:_Alicia_Perez a ex:Person ;
+  schema:name "Perez, Alicia" ;
+  ex:enrolledIn ex:MATH350, ex:CS220, ex:PSY330, ex:ENG410, ex:CHEM250 .
+ex:_Hailey_Harrington a ex:Person ;
+  schema:name "Harrington, Hailey" ;
+  ex:enrolledIn ex:PHYS220, ex:CHEM250, ex:STAT200, ex:MATH350, ex:CHEM101 .
+ex:_Beth_Hill a ex:Person ;
+  schema:name "Hill, Beth" ;
+  ex:enrolledIn ex:PHYS220, ex:PHYS101, ex:PSY330 .
+ex:_Lisa_Reed a ex:Person ;
+  schema:name "Reed, Lisa" ;
+  ex:enrolledIn ex:CS220, ex:ECON330, ex:MATH240, ex:PSY330 .
+ex:_Elena_Nguyen a ex:Person ;
+  schema:name "Nguyen, Elena" ;
+  ex:enrolledIn ex:MATH101, ex:MATH350, ex:PSY101, ex:ECON101 .
+ex:_Holly_Bennett a ex:Person ;
+  schema:name "Bennett, Holly" ;
+  ex:enrolledIn ex:MATH350, ex:CHEM101, ex:MATH240 .
+ex:_Jasper_Campbell a ex:Person ;
+  schema:name "Campbell, Jasper" ;
+  ex:enrolledIn ex:HIST110, ex:HIST305, ex:MATH350 .
+ex:_Stephanie_Lewis a ex:Person ;
+  schema:name "Lewis, Stephanie" ;
+  ex:enrolledIn ex:ECON330, ex:HIST110, ex:MATH240, ex:CHEM101 .
+ex:_Derek_Bailey a ex:Person ;
+  schema:name "Bailey, Derek" ;
+  ex:enrolledIn ex:MATH101, ex:PHYS101, ex:MATH240 .
+ex:_Susan_Powell a ex:Person ;
+  schema:name "Powell, Susan" ;
+  ex:enrolledIn ex:PHYS220, ex:CS220, ex:STAT200, ex:ENG410, ex:HIST110 .
+ex:_Vincent_Ashford a ex:Person ;
+  schema:name "Ashford, Vincent" ;
+  ex:enrolledIn ex:STAT200, ex:PSY101, ex:HIST110, ex:ENG410 .
+ex:_Christian_Howard a ex:Person ;
+  schema:name "Howard, Christian" ;
+  ex:enrolledIn ex:CS220, ex:PSY330, ex:ECON330, ex:PHYS220 .
+ex:_Willow_Simmons a ex:Person ;
+  schema:name "Simmons, Willow" ;
+  ex:enrolledIn ex:CS101, ex:ECON101, ex:ENG410, ex:MATH240 .
+ex:_William_Long a ex:Person ;
+  schema:name "Long, William" ;
+  ex:enrolledIn ex:ENG101, ex:ENG410, ex:MATH240, ex:MATH350 .
+ex:_Claire_Clark a ex:Person ;
+  schema:name "Clark, Claire" ;
+  ex:enrolledIn ex:CHEM250, ex:HIST110, ex:CS101 .
+ex:_Holly_Morris a ex:Person ;
+  schema:name "Morris, Holly" ;
+  ex:enrolledIn ex:CS220, ex:STAT410, ex:PSY330 .
+ex:_Yvette_Martinez a ex:Person ;
+  schema:name "Martinez, Yvette" ;
+  ex:enrolledIn ex:MATH101, ex:CS310, ex:PSY330, ex:PSY101, ex:CHEM101 .
+ex:_Lucy_Stratford a ex:Person ;
+  schema:name "Stratford, Lucy" ;
+  ex:enrolledIn ex:CS220, ex:PSY101, ex:PHYS101, ex:ENG410, ex:ENG101 .
+ex:_Erica_Edwards a ex:Person ;
+  schema:name "Edwards, Erica" ;
+  ex:enrolledIn ex:ENG101, ex:CHEM250, ex:HIST110, ex:PHYS101, ex:CS101 .
+ex:_Jason_Thayer a ex:Person ;
+  schema:name "Thayer, Jason" ;
+  ex:enrolledIn ex:PHYS220, ex:ENG101, ex:HIST110, ex:MATH240 .
+ex:_Crystal_Butler a ex:Person ;
+  schema:name "Butler, Crystal" ;
+  ex:enrolledIn ex:CS220, ex:CS310, ex:CHEM250 .
+ex:_Leonard_Baker a ex:Person ;
+  schema:name "Baker, Leonard" ;
+  ex:enrolledIn ex:ENG410, ex:MATH101, ex:ECON101 .
+ex:_Carl_Powell a ex:Person ;
+  schema:name "Powell, Carl" ;
+  ex:enrolledIn ex:STAT200, ex:CS101, ex:PSY101, ex:CS310 .
+ex:_Alex_Patterson a ex:Person ;
+  schema:name "Patterson, Alex" ;
+  ex:enrolledIn ex:MATH350, ex:CS310, ex:CS101 .
+ex:_Jennifer_Thompson a ex:Person ;
+  schema:name "Thompson, Jennifer" ;
+  ex:enrolledIn ex:ENG101, ex:ENG410, ex:STAT200, ex:CS101 .
+ex:_Deborah_Stratford a ex:Person ;
+  schema:name "Stratford, Deborah" ;
+  ex:enrolledIn ex:ENG101, ex:PHYS220, ex:CS220 .
+ex:_Catherine_Richardson a ex:Person ;
+  schema:name "Richardson, Catherine" ;
+  ex:enrolledIn ex:CHEM250 .
+ex:_Harold_Stanton a ex:Person ;
+  schema:name "Stanton, Harold" ;
+  ex:enrolledIn ex:HIST110, ex:ECON330, ex:ECON101, ex:CS101 .
+ex:_Rosa_Murphy a ex:Person ;
+  schema:name "Murphy, Rosa" ;
+  ex:enrolledIn ex:ECON101, ex:ENG410, ex:MATH240, ex:HIST305 .
+ex:_Curtis_Lockwood a ex:Person ;
+  schema:name "Lockwood, Curtis" ;
+  ex:enrolledIn ex:PSY330, ex:CS220, ex:ENG101, ex:MATH101 .
+ex:_Sandra_Hawthorne a ex:Person ;
+  schema:name "Hawthorne, Sandra" ;
+  ex:enrolledIn ex:ENG101, ex:CHEM250, ex:PSY101, ex:MATH240 .
+ex:_Brooke_Whitman a ex:Person ;
+  schema:name "Whitman, Brooke" ;
+  ex:enrolledIn ex:CHEM250, ex:MATH350, ex:CS220 .
+ex:_Violet_Young a ex:Person ;
+  schema:name "Young, Violet" ;
+  ex:enrolledIn ex:CS310, ex:MATH240, ex:STAT410, ex:PSY101, ex:PHYS101 .
+ex:_Charles_Baker a ex:Person ;
+  schema:name "Baker, Charles" ;
+  ex:enrolledIn ex:STAT200, ex:CHEM250, ex:CHEM101, ex:MATH101 .
+ex:_Beth_Watson a ex:Person ;
+  schema:name "Watson, Beth" ;
+  ex:enrolledIn ex:ENG101, ex:PHYS101, ex:MATH240, ex:ECON330 .
+ex:_Rebecca_Griffin a ex:Person ;
+  schema:name "Griffin, Rebecca" ;
+  ex:enrolledIn ex:ECON101, ex:STAT200, ex:CS220 .
+ex:_Alexandra_Sinclair a ex:Person ;
+  schema:name "Sinclair, Alexandra" ;
+  ex:enrolledIn ex:MATH350, ex:HIST110, ex:ENG410, ex:CS310, ex:CHEM101 .
+ex:_Helen_Watson a ex:Person ;
+  schema:name "Watson, Helen" ;
+  ex:enrolledIn ex:PSY330, ex:PHYS101, ex:MATH240, ex:HIST110, ex:STAT410 .
+ex:_Cara_Remington a ex:Person ;
+  schema:name "Remington, Cara" ;
+  ex:enrolledIn ex:ECON330, ex:MATH350, ex:STAT410 .
+ex:_Sara_Mitchell a ex:Person ;
+  schema:name "Mitchell, Sara" ;
+  ex:enrolledIn ex:PHYS220, ex:ECON101, ex:PSY330, ex:HIST305 .
+ex:_Christina_York a ex:Person ;
+  schema:name "York, Christina" ;
+  ex:enrolledIn ex:ECON330, ex:STAT410, ex:CS310, ex:PHYS220 .
+ex:_Catherine_Diaz a ex:Person ;
+  schema:name "Diaz, Catherine" ;
+  ex:enrolledIn ex:PSY330, ex:CHEM250, ex:ECON101, ex:CS101 .
+ex:_John_Garrison a ex:Person ;
+  schema:name "Garrison, John" ;
+  ex:enrolledIn ex:STAT410, ex:CS101, ex:HIST110, ex:MATH240 .
+ex:_Eric_Scott a ex:Person ;
+  schema:name "Scott, Eric" ;
+  ex:enrolledIn ex:PHYS101, ex:HIST110, ex:CS310, ex:CS220, ex:ENG101 .
+ex:_Avery_Lopez a ex:Person ;
+  schema:name "Lopez, Avery" ;
+  ex:enrolledIn ex:CHEM250, ex:ENG410, ex:HIST305, ex:PSY330, ex:ECON101 .
+ex:_Lucy_Winslow a ex:Person ;
+  schema:name "Winslow, Lucy" ;
+  ex:enrolledIn ex:HIST110, ex:CS101, ex:ENG101 .
+ex:_Eleanor_Harrington a ex:Person ;
+  schema:name "Harrington, Eleanor" ;
+  ex:enrolledIn ex:CHEM101, ex:MATH240, ex:PSY101, ex:HIST110 .
+ex:_Stephen_Baker a ex:Person ;
+  schema:name "Baker, Stephen" ;
+  ex:enrolledIn ex:PHYS101, ex:MATH240, ex:MATH101, ex:ECON101 .
+ex:_Carl_Morris a ex:Person ;
+  schema:name "Morris, Carl" ;
+  ex:enrolledIn ex:PSY330, ex:CHEM101, ex:ECON101, ex:ENG410, ex:CS310 .
+ex:_Todd_Stratford a ex:Person ;
+  schema:name "Stratford, Todd" ;
+  ex:enrolledIn ex:ENG410, ex:CHEM101, ex:HIST305 .
+ex:_Eva_Lancaster a ex:Person ;
+  schema:name "Lancaster, Eva" ;
+  ex:enrolledIn ex:CHEM101, ex:MATH240, ex:MATH101, ex:ENG410, ex:PSY101 .
+ex:_Lisa_Thomas a ex:Person ;
+  schema:name "Thomas, Lisa" ;
+  ex:enrolledIn ex:CHEM101, ex:HIST110, ex:ENG101 .
+ex:_Violet_Williams a ex:Person ;
+  schema:name "Williams, Violet" ;
+  ex:enrolledIn ex:HIST110, ex:CS310, ex:ECON101, ex:HIST305, ex:PSY330 .
+ex:_Bradley_Fairchild a ex:Person ;
+  schema:name "Fairchild, Bradley" ;
+  ex:enrolledIn ex:STAT410, ex:MATH240, ex:HIST305, ex:CHEM101 .
+ex:_Isabella_Radcliffe a ex:Person ;
+  schema:name "Radcliffe, Isabella" ;
+  ex:enrolledIn ex:CS101, ex:MATH101, ex:PHYS101, ex:ECON330, ex:PHYS220 .
+ex:_Keith_Thornton a ex:Person ;
+  schema:name "Thornton, Keith" ;
+  ex:enrolledIn ex:MATH101, ex:MATH350, ex:CHEM250, ex:CS310 .
+ex:_Austin_Taylor a ex:Person ;
+  schema:name "Taylor, Austin" ;
+  ex:enrolledIn ex:MATH101, ex:ECON330, ex:CS220 .
+ex:_Robert_Thomas a ex:Person ;
+  schema:name "Thomas, Robert" ;
+  ex:enrolledIn ex:MATH350, ex:CS101, ex:ECON330, ex:PSY330 .
+ex:_Alan_Wilson a ex:Person ;
+  schema:name "Wilson, Alan" ;
+  ex:enrolledIn ex:ENG410, ex:MATH350, ex:CS220, ex:MATH101 .
+ex:_Curtis_Torres a ex:Person ;
+  schema:name "Torres, Curtis" ;
+  ex:enrolledIn ex:STAT200, ex:PSY330, ex:PHYS220, ex:ENG101 .
+ex:_Marie_Reed a ex:Person ;
+  schema:name "Reed, Marie" ;
+  ex:enrolledIn ex:ENG101, ex:ENG410, ex:PHYS220, ex:HIST305, ex:CS101 .
+ex:_Jennifer_Lewis a ex:Person ;
+  schema:name "Lewis, Jennifer" ;
+  ex:enrolledIn ex:MATH350, ex:CHEM250, ex:CHEM101 .
+ex:_Todd_Lopez a ex:Person ;
+  schema:name "Lopez, Todd" ;
+  ex:enrolledIn ex:CS101, ex:PHYS220, ex:MATH101 .
+ex:_Gabriel_Ramirez a ex:Person ;
+  schema:name "Ramirez, Gabriel" ;
+  ex:enrolledIn ex:ENG410, ex:CHEM101, ex:HIST110, ex:HIST305, ex:ECON330 .
+ex:_Holly_Nichols a ex:Person ;
+  schema:name "Nichols, Holly" ;
+  ex:enrolledIn ex:CHEM101, ex:MATH240 .
+ex:_Kayla_Young a ex:Person ;
+  schema:name "Young, Kayla" ;
+  ex:enrolledIn ex:ENG101, ex:ECON330, ex:MATH101, ex:HIST110 .
+ex:_Zachary_Martinez a ex:Person ;
+  schema:name "Martinez, Zachary" ;
+  ex:enrolledIn ex:PSY101, ex:HIST110, ex:CS101, ex:MATH350 .
+ex:_Jennifer_Adams a ex:Person ;
+  schema:name "Adams, Jennifer" ;
+  ex:enrolledIn ex:MATH350, ex:CS101, ex:MATH240, ex:MATH101 .
+ex:_Blake_Ward a ex:Person ;
+  schema:name "Ward, Blake" ;
+  ex:enrolledIn ex:MATH101, ex:CS101, ex:MATH350, ex:CHEM101 .
+ex:_Valerie_Richardson a ex:Person ;
+  schema:name "Richardson, Valerie" ;
+  ex:enrolledIn ex:PSY101, ex:MATH101, ex:CS101, ex:ECON101, ex:STAT200 .
+ex:_Erica_Winslow a ex:Person ;
+  schema:name "Winslow, Erica" ;
+  ex:enrolledIn ex:ECON101, ex:MATH350, ex:PHYS101, ex:CS220, ex:MATH240 .
+ex:_Ryan_Caldwell a ex:Person ;
+  schema:name "Caldwell, Ryan" ;
+  ex:enrolledIn ex:HIST110, ex:CS310, ex:ECON330, ex:MATH240, ex:PHYS220 .
+ex:_Hailey_Nelson a ex:Person ;
+  schema:name "Nelson, Hailey" ;
+  ex:enrolledIn ex:ECON330, ex:STAT200, ex:PSY330 .
+ex:_Lisa_Eastman a ex:Person ;
+  schema:name "Eastman, Lisa" ;
+  ex:enrolledIn ex:ECON101, ex:CHEM250, ex:MATH240 .
+ex:_Bryan_Hawthorne a ex:Person ;
+  schema:name "Hawthorne, Bryan" ;
+  ex:enrolledIn ex:ENG101, ex:CS220, ex:PSY101, ex:HIST110 .
+ex:_Jennifer_Lennox a ex:Person ;
+  schema:name "Lennox, Jennifer" ;
+  ex:enrolledIn ex:MATH350, ex:STAT200, ex:HIST305, ex:PSY330, ex:ENG101 .
+ex:_Patrick_Richardson a ex:Person ;
+  schema:name "Richardson, Patrick" ;
+  ex:enrolledIn ex:CHEM101, ex:HIST305, ex:ECON101, ex:CHEM250 .
+ex:_Charlotte_Harrington a ex:Person ;
+  schema:name "Harrington, Charlotte" ;
+  ex:enrolledIn ex:ENG410, ex:PSY330, ex:HIST305, ex:PSY101, ex:MATH101 .
+ex:_Leslie_Whitman a ex:Person ;
+  schema:name "Whitman, Leslie" ;
+  ex:enrolledIn ex:CHEM250, ex:STAT410, ex:ECON101 .
+ex:_Justin_Coleman a ex:Person ;
+  schema:name "Coleman, Justin" ;
+  ex:enrolledIn ex:PSY101, ex:CHEM250, ex:ECON101 .
+ex:_Ruby_Hill a ex:Person ;
+  schema:name "Hill, Ruby" ;
+  ex:enrolledIn ex:CS220, ex:ENG410, ex:HIST110 .
+ex:_Casey_Eastman a ex:Person ;
+  schema:name "Eastman, Casey" ;
+  ex:enrolledIn ex:CHEM101, ex:CHEM250, ex:PSY101, ex:MATH101 .
+ex:_Catherine_Murray a ex:Person ;
+  schema:name "Murray, Catherine" ;
+  ex:enrolledIn ex:MATH240, ex:STAT200, ex:PSY330 .
+ex:_Noah_Whitmore a ex:Person ;
+  schema:name "Whitmore, Noah" ;
+  ex:enrolledIn ex:ECON330, ex:STAT410, ex:MATH350, ex:ENG410 .
+ex:_Joshua_Harris a ex:Person ;
+  schema:name "Harris, Joshua" ;
+  ex:enrolledIn ex:STAT200, ex:PHYS101, ex:ECON101, ex:CHEM101, ex:CS310 .
+ex:_Joseph_Turner a ex:Person ;
+  schema:name "Turner, Joseph" ;
+  ex:enrolledIn ex:MATH240, ex:MATH350 .
+ex:_Isabella_Fairchild a ex:Person ;
+  schema:name "Fairchild, Isabella" ;
+  ex:enrolledIn ex:CHEM250, ex:CS310 .
+ex:_Crystal_Moore a ex:Person ;
+  schema:name "Moore, Crystal" ;
+  ex:enrolledIn ex:ECON101, ex:ECON330, ex:PSY101, ex:CS101 .
+ex:_Bianca_Garrison a ex:Person ;
+  schema:name "Garrison, Bianca" ;
+  ex:enrolledIn ex:CS310, ex:ENG101, ex:STAT200, ex:PHYS220, ex:PSY101 .
+ex:_Katherine_Gonzalez a ex:Person ;
+  schema:name "Gonzalez, Katherine" ;
+  ex:enrolledIn ex:HIST305, ex:MATH350, ex:HIST110, ex:ENG101, ex:PSY101 .
+ex:_Preston_Thayer a ex:Person ;
+  schema:name "Thayer, Preston" ;
+  ex:enrolledIn ex:HIST305, ex:CS310, ex:CS101 .
+ex:_Gerald_Gonzalez a ex:Person ;
+  schema:name "Gonzalez, Gerald" ;
+  ex:enrolledIn ex:ENG410, ex:PHYS101, ex:STAT410, ex:PSY330 .
+ex:_Paul_Jackson a ex:Person ;
+  schema:name "Jackson, Paul" ;
+  ex:enrolledIn ex:MATH101, ex:ENG410, ex:ECON330 .
+ex:_Wayne_Diaz a ex:Person ;
+  schema:name "Diaz, Wayne" ;
+  ex:enrolledIn ex:CS310, ex:HIST110, ex:MATH350, ex:HIST305 .
+ex:_Nicole_Martinez a ex:Person ;
+  schema:name "Martinez, Nicole" ;
+  ex:enrolledIn ex:HIST110, ex:HIST305, ex:MATH350 .
+ex:_Cody_Harrington a ex:Person ;
+  schema:name "Harrington, Cody" ;
+  ex:enrolledIn ex:HIST110, ex:ECON101, ex:STAT200 .
+ex:_Charlotte_Thomas a ex:Person ;
+  schema:name "Thomas, Charlotte" ;
+  ex:enrolledIn ex:ECON101, ex:CHEM101, ex:HIST110, ex:ENG410 .
+ex:_Seth_Halloway a ex:Person ;
+  schema:name "Halloway, Seth" ;
+  ex:enrolledIn ex:PSY330, ex:MATH101, ex:MATH350 .
+ex:_Casey_Harrington a ex:Person ;
+  schema:name "Harrington, Casey" ;
+  ex:enrolledIn ex:CHEM250, ex:MATH240, ex:CS310 .
+ex:_Simon_Harris a ex:Person ;
+  schema:name "Harris, Simon" ;
+  ex:enrolledIn ex:MATH350, ex:PSY101, ex:CS101, ex:ECON330 .
+ex:_Catherine_Roberts a ex:Person ;
+  schema:name "Roberts, Catherine" ;
+  ex:enrolledIn ex:CS101, ex:CHEM250, ex:PHYS220 .
+ex:_Christopher_Richardson a ex:Person ;
+  schema:name "Richardson, Christopher" ;
+  ex:enrolledIn ex:MATH240, ex:PSY330, ex:CS310, ex:STAT410, ex:CHEM101 .
+ex:_Alice_Lennox a ex:Person ;
+  schema:name "Lennox, Alice" ;
+  ex:enrolledIn ex:ECON101, ex:MATH101, ex:MATH240 .
+ex:_Deborah_Wright a ex:Person ;
+  schema:name "Wright, Deborah" ;
+  ex:enrolledIn ex:MATH240, ex:PSY101, ex:CS220, ex:CHEM101, ex:HIST305 .
+ex:_Helen_Fitzpatrick a ex:Person ;
+  schema:name "Fitzpatrick, Helen" ;
+  ex:enrolledIn ex:HIST305, ex:STAT200, ex:ECON101, ex:CS220 .
+ex:_Amy_Thornton a ex:Person ;
+  schema:name "Thornton, Amy" ;
+  ex:enrolledIn ex:PHYS101, ex:STAT200, ex:CS101 .
+ex:_Phoebe_Somerset a ex:Person ;
+  schema:name "Somerset, Phoebe" ;
+  ex:enrolledIn ex:CS220, ex:PHYS220, ex:MATH240 .
+ex:_Evelyn_Martinez a ex:Person ;
+  schema:name "Martinez, Evelyn" ;
+  ex:enrolledIn ex:CHEM101, ex:HIST305, ex:STAT410, ex:MATH350, ex:CS220 .
+ex:_Caleb_Lopez a ex:Person ;
+  schema:name "Lopez, Caleb" ;
+  ex:enrolledIn ex:CS310, ex:ENG101, ex:STAT200, ex:MATH350 .
+ex:_Cameron_Dalton a ex:Person ;
+  schema:name "Dalton, Cameron" ;
+  ex:enrolledIn ex:MATH101, ex:ENG410, ex:ENG101 .
+ex:_Wyatt_Jones a ex:Person ;
+  schema:name "Jones, Wyatt" ;
+  ex:enrolledIn ex:CS310, ex:CHEM250, ex:MATH240 .
+ex:_Rosa_Whitman a ex:Person ;
+  schema:name "Whitman, Rosa" ;
+  ex:enrolledIn ex:PHYS220, ex:PSY101, ex:ENG410 .
+ex:_Ashley_Butler a ex:Person ;
+  schema:name "Butler, Ashley" ;
+  ex:enrolledIn ex:STAT200, ex:MATH350, ex:CS101, ex:CHEM250, ex:PHYS220 .
+ex:_Derek_Cox a ex:Person ;
+  schema:name "Cox, Derek" ;
+  ex:enrolledIn ex:CHEM250, ex:STAT410, ex:MATH350 .
+ex:_Stephanie_Ward a ex:Person ;
+  schema:name "Ward, Stephanie" ;
+  ex:enrolledIn ex:ECON101, ex:MATH350, ex:MATH101 .
+ex:_Walter_Thompson a ex:Person ;
+  schema:name "Thompson, Walter" ;
+  ex:enrolledIn ex:ECON101, ex:PHYS220, ex:STAT410, ex:STAT200 .
+ex:_Georgia_Phillips a ex:Person ;
+  schema:name "Phillips, Georgia" ;
+  ex:enrolledIn ex:ECON101, ex:MATH350, ex:PSY101, ex:STAT200, ex:CS101 .
+ex:_Hannah_Clark a ex:Person ;
+  schema:name "Clark, Hannah" ;
+  ex:enrolledIn ex:MATH101, ex:CHEM250, ex:HIST110, ex:CHEM101 .
+ex:_Wesley_Sanchez a ex:Person ;
+  schema:name "Sanchez, Wesley" ;
+  ex:enrolledIn ex:CHEM250, ex:HIST305, ex:HIST110, ex:MATH350 .
+ex:_Brenda_Parker a ex:Person ;
+  schema:name "Parker, Brenda" ;
+  ex:enrolledIn ex:PHYS220, ex:ENG101, ex:CHEM250 .
+ex:_Clara_Lockwood a ex:Person ;
+  schema:name "Lockwood, Clara" ;
+  ex:enrolledIn ex:HIST110, ex:MATH101, ex:CS310, ex:CHEM101, ex:ENG410 .
+ex:_Adam_Pendleton a ex:Person ;
+  schema:name "Pendleton, Adam" ;
+  ex:enrolledIn ex:ECON101, ex:CS101, ex:PHYS101 .
+ex:_Nathan_Hayes a ex:Person ;
+  schema:name "Hayes, Nathan" ;
+  ex:enrolledIn ex:CHEM101, ex:STAT200, ex:PSY101 .
+ex:_Isabella_Murray a ex:Person ;
+  schema:name "Murray, Isabella" ;
+  ex:enrolledIn ex:MATH350, ex:STAT410, ex:HIST305, ex:MATH240 .
+ex:_Taylor_Baker a ex:Person ;
+  schema:name "Baker, Taylor" ;
+  ex:enrolledIn ex:MATH240, ex:CHEM101, ex:ENG101, ex:PHYS220, ex:HIST305 .
+ex:_Cara_Allenby a ex:Person ;
+  schema:name "Allenby, Cara" ;
+  ex:enrolledIn ex:MATH350, ex:PSY101, ex:CS101 .
+ex:_Tina_Baker a ex:Person ;
+  schema:name "Baker, Tina" ;
+  ex:enrolledIn ex:MATH240, ex:STAT200, ex:ENG101, ex:PSY330 .
+ex:_Vincent_Ashford a ex:Person ;
+  schema:name "Ashford, Vincent" ;
+  ex:enrolledIn ex:PHYS220, ex:CS220, ex:ENG410 .
+ex:_Brian_Radcliffe a ex:Person ;
+  schema:name "Radcliffe, Brian" ;
+  ex:enrolledIn ex:ECON101, ex:PSY330, ex:ENG101, ex:PHYS220 .
+ex:_Pauline_Lennox a ex:Person ;
+  schema:name "Lennox, Pauline" ;
+  ex:enrolledIn ex:ECON330, ex:PSY330, ex:MATH240, ex:MATH101 .
+ex:_Laura_Hernandez a ex:Person ;
+  schema:name "Hernandez, Laura" ;
+  ex:enrolledIn ex:CS101, ex:MATH101, ex:MATH350, ex:CS310, ex:HIST305 .
+ex:_Jack_Morgan a ex:Person ;
+  schema:name "Morgan, Jack" ;
+  ex:enrolledIn ex:PSY101, ex:STAT200, ex:CS220, ex:MATH350 .
+ex:_Rebecca_Green a ex:Person ;
+  schema:name "Green, Rebecca" ;
+  ex:enrolledIn ex:ECON330, ex:MATH350, ex:STAT410, ex:MATH240 .
+ex:_Scott_Robinson a ex:Person ;
+  schema:name "Robinson, Scott" ;
+  ex:enrolledIn ex:CS220, ex:PSY330, ex:MATH350, ex:STAT200, ex:PSY101 .
+ex:_Stephanie_Garrison a ex:Person ;
+  schema:name "Garrison, Stephanie" ;
+  ex:enrolledIn ex:PSY330, ex:PHYS101, ex:HIST305, ex:PHYS220, ex:ECON330 .
+ex:_Dylan_Diaz a ex:Person ;
+  schema:name "Diaz, Dylan" ;
+  ex:enrolledIn ex:HIST305, ex:MATH350, ex:ECON101 .
+ex:_Fiona_Stratford a ex:Person ;
+  schema:name "Stratford, Fiona" ;
+  ex:enrolledIn ex:PHYS220, ex:MATH240, ex:PHYS101, ex:CHEM101 .
+ex:_Rachel_Stanton a ex:Person ;
+  schema:name "Stanton, Rachel" ;
+  ex:enrolledIn ex:MATH101, ex:PHYS101, ex:ECON101, ex:STAT200 .
+ex:_Zoey_Coleman a ex:Person ;
+  schema:name "Coleman, Zoey" ;
+  ex:enrolledIn ex:HIST110, ex:STAT200, ex:HIST305, ex:STAT410, ex:CS101 .
+ex:_Lisa_Miller a ex:Person ;
+  schema:name "Miller, Lisa" ;
+  ex:enrolledIn ex:CHEM250, ex:ENG410, ex:STAT200, ex:CHEM101, ex:MATH350 .
+ex:_Stanley_Sanders a ex:Person ;
+  schema:name "Sanders, Stanley" ;
+  ex:enrolledIn ex:MATH350, ex:MATH240, ex:HIST305, ex:ECON330 .
+ex:_Kyle_Gray a ex:Person ;
+  schema:name "Gray, Kyle" ;
+  ex:enrolledIn ex:CS220, ex:CHEM101, ex:MATH240 .
+ex:_Amelia_Lewis a ex:Person ;
+  schema:name "Lewis, Amelia" ;
+  ex:enrolledIn ex:ENG101, ex:MATH240, ex:ECON101, ex:CHEM250, ex:STAT200 .
+ex:_Faith_Rogers a ex:Person ;
+  schema:name "Rogers, Faith" ;
+  ex:enrolledIn ex:STAT200, ex:CHEM250, ex:MATH101, ex:CHEM101 .
+ex:_Gail_Caldwell a ex:Person ;
+  schema:name "Caldwell, Gail" ;
+  ex:enrolledIn ex:MATH240, ex:ENG101, ex:CHEM101 .
+ex:_Cara_Cook a ex:Person ;
+  schema:name "Cook, Cara" ;
+  ex:enrolledIn ex:CS310, ex:MATH240, ex:STAT200, ex:PHYS101, ex:ENG101 .
+ex:_Leslie_Stewart a ex:Person ;
+  schema:name "Stewart, Leslie" ;
+  ex:enrolledIn ex:CS220, ex:STAT410, ex:HIST110, ex:ENG410, ex:CS101 .
+ex:_Paul_Smith a ex:Person ;
+  schema:name "Smith, Paul" ;
+  ex:enrolledIn ex:MATH101, ex:PSY101, ex:PHYS101, ex:MATH240 .
+ex:_Leah_Edwards a ex:Person ;
+  schema:name "Edwards, Leah" ;
+  ex:enrolledIn ex:ENG410, ex:ENG101, ex:MATH101, ex:STAT410, ex:MATH350 .
+ex:_Benjamin_Allen a ex:Person ;
+  schema:name "Allen, Benjamin" ;
+  ex:enrolledIn ex:CS220, ex:MATH101, ex:STAT200, ex:ECON101 .
+ex:_Seth_Moore a ex:Person ;
+  schema:name "Moore, Seth" ;
+  ex:enrolledIn ex:CHEM250, ex:CS310, ex:HIST305, ex:ECON330 .
+ex:_Angela_Smith a ex:Person ;
+  schema:name "Smith, Angela" ;
+  ex:enrolledIn ex:PSY330, ex:HIST305, ex:MATH350, ex:CHEM250 .
+ex:_Jane_Kendrick a ex:Person ;
+  schema:name "Kendrick, Jane" ;
+  ex:enrolledIn ex:CS101, ex:ECON101, ex:ENG410, ex:CS220 .
+ex:_Stuart_Kendrick a ex:Person ;
+  schema:name "Kendrick, Stuart" ;
+  ex:enrolledIn ex:PSY330, ex:ENG101, ex:CHEM250, ex:HIST110 .
+ex:_Bonnie_Powell a ex:Person ;
+  schema:name "Powell, Bonnie" ;
+  ex:enrolledIn ex:ECON330, ex:CS101, ex:PSY330, ex:CHEM250 .
+ex:_Curtis_Ashford a ex:Person ;
+  schema:name "Ashford, Curtis" ;
+  ex:enrolledIn ex:HIST110, ex:CHEM101, ex:PHYS101 .
+ex:_Bryce_Hughes a ex:Person ;
+  schema:name "Hughes, Bryce" ;
+  ex:enrolledIn ex:PSY101, ex:PHYS220, ex:CHEM250 .
+ex:_Fiona_Drake a ex:Person ;
+  schema:name "Drake, Fiona" ;
+  ex:enrolledIn ex:ENG410, ex:PSY330, ex:ECON330, ex:HIST110 .
+ex:_Ariana_Nichols a ex:Person ;
+  schema:name "Nichols, Ariana" ;
+  ex:enrolledIn ex:STAT410, ex:ECON330, ex:PHYS220 .
+ex:_William_Perez a ex:Person ;
+  schema:name "Perez, William" ;
+  ex:enrolledIn ex:STAT200, ex:MATH350 .
+ex:_Sean_Smith a ex:Person ;
+  schema:name "Smith, Sean" ;
+  ex:enrolledIn ex:PSY330, ex:STAT410, ex:MATH240 .
+ex:_Lauren_Bailey a ex:Person ;
+  schema:name "Bailey, Lauren" ;
+  ex:enrolledIn ex:CHEM101, ex:CHEM250, ex:MATH350, ex:CS101, ex:STAT410 .
+ex:_Sydney_Armstrong a ex:Person ;
+  schema:name "Armstrong, Sydney" ;
+  ex:enrolledIn ex:MATH350, ex:HIST305, ex:HIST110 .
+ex:_Eleanor_Parker a ex:Person ;
+  schema:name "Parker, Eleanor" ;
+  ex:enrolledIn ex:ECON101, ex:PSY101, ex:CS310, ex:STAT410, ex:MATH240 .
+ex:_Andrew_Rodriguez a ex:Person ;
+  schema:name "Rodriguez, Andrew" ;
+  ex:enrolledIn ex:MATH101, ex:PSY101, ex:STAT200 .
+ex:_Kathleen_Talbot a ex:Person ;
+  schema:name "Talbot, Kathleen" ;
+  ex:enrolledIn ex:MATH350, ex:CS101, ex:CHEM250 .
+ex:_Miles_Morris a ex:Person ;
+  schema:name "Morris, Miles" ;
+  ex:enrolledIn ex:MATH350, ex:HIST110, ex:CS220, ex:ECON101 .
+ex:_Leslie_Drake a ex:Person ;
+  schema:name "Drake, Leslie" ;
+  ex:enrolledIn ex:CHEM250, ex:HIST110, ex:STAT410 .
+ex:_Cody_Brighton a ex:Person ;
+  schema:name "Brighton, Cody" ;
+  ex:enrolledIn ex:PSY101, ex:ECON101, ex:MATH240, ex:MATH101 .
+ex:_Raymond_Garcia a ex:Person ;
+  schema:name "Garcia, Raymond" ;
+  ex:enrolledIn ex:ECON330, ex:PHYS220, ex:CS220, ex:MATH350 .
+ex:_Grace_Powell a ex:Person ;
+  schema:name "Powell, Grace" ;
+  ex:enrolledIn ex:ENG410, ex:CHEM101, ex:MATH240, ex:CS101, ex:PHYS101 .
+ex:_Edward_Dempsey a ex:Person ;
+  schema:name "Dempsey, Edward" ;
+  ex:enrolledIn ex:CHEM101, ex:ECON330, ex:HIST110, ex:ENG410 .
+ex:_Steven_Vaughn a ex:Person ;
+  schema:name "Vaughn, Steven" ;
+  ex:enrolledIn ex:CS220, ex:CHEM250, ex:MATH350, ex:CHEM101, ex:PHYS220 .
+ex:_Emma_Phillips a ex:Person ;
+  schema:name "Phillips, Emma" ;
+  ex:enrolledIn ex:STAT410, ex:HIST110, ex:HIST305, ex:CS310, ex:STAT200 .
+ex:_Wendy_Parker a ex:Person ;
+  schema:name "Parker, Wendy" ;
+  ex:enrolledIn ex:HIST305, ex:PSY330, ex:PSY101, ex:CS101, ex:STAT410 .
+ex:_Madison_Quinn a ex:Person ;
+  schema:name "Quinn, Madison" ;
+  ex:enrolledIn ex:MATH240, ex:ECON330, ex:PSY101, ex:ECON101 .
+ex:_Deborah_Davis a ex:Person ;
+  schema:name "Davis, Deborah" ;
+  ex:enrolledIn ex:ECON330, ex:ENG101, ex:PSY330, ex:MATH240, ex:STAT410 .
+ex:_Sharon_Lewis a ex:Person ;
+  schema:name "Lewis, Sharon" ;
+  ex:enrolledIn ex:ECON330, ex:STAT410, ex:CS101, ex:PSY101 .
+ex:_Ariana_Washington a ex:Person ;
+  schema:name "Washington, Ariana" ;
+  ex:enrolledIn ex:ENG101, ex:PSY101, ex:PHYS101, ex:CHEM250 .
+ex:_Paul_Russell a ex:Person ;
+  schema:name "Russell, Paul" ;
+  ex:enrolledIn ex:CS220, ex:ECON330, ex:HIST110, ex:CS310, ex:ENG410 .
+ex:_Dominic_Rivera a ex:Person ;
+  schema:name "Rivera, Dominic" ;
+  ex:enrolledIn ex:CS101, ex:PSY330, ex:ENG410 .
+ex:_Caitlin_Whitmore a ex:Person ;
+  schema:name "Whitmore, Caitlin" ;
+  ex:enrolledIn ex:MATH101, ex:CS220, ex:CS101, ex:STAT410 .
+ex:_Kenneth_Lancaster a ex:Person ;
+  schema:name "Lancaster, Kenneth" ;
+  ex:enrolledIn ex:CS310, ex:ECON330, ex:CS220, ex:CS101, ex:ENG410 .
+ex:_Crystal_Hill a ex:Person ;
+  schema:name "Hill, Crystal" ;
+  ex:enrolledIn ex:STAT410, ex:PSY330, ex:CHEM250, ex:MATH101, ex:ENG101 .
+ex:_Curtis_Morgan a ex:Person ;
+  schema:name "Morgan, Curtis" ;
+  ex:enrolledIn ex:CS101, ex:ENG101 .
+ex:_Xander_Barnes a ex:Person ;
+  schema:name "Barnes, Xander" ;
+  ex:enrolledIn ex:MATH240, ex:PHYS220, ex:MATH350 .
+ex:_Dylan_Cox a ex:Person ;
+  schema:name "Cox, Dylan" ;
+  ex:enrolledIn ex:MATH240, ex:CS310, ex:PSY101, ex:MATH101 .
+ex:_Xavier_Henderson a ex:Person ;
+  schema:name "Henderson, Xavier" ;
+  ex:enrolledIn ex:CS220, ex:MATH101, ex:PSY101, ex:HIST110 .
+ex:_Mason_Blair a ex:Person ;
+  schema:name "Blair, Mason" ;
+  ex:enrolledIn ex:ENG410, ex:CHEM250, ex:ECON101, ex:MATH240, ex:MATH350 .
+ex:_Harry_Rodriguez a ex:Person ;
+  schema:name "Rodriguez, Harry" ;
+  ex:enrolledIn ex:CS310, ex:ENG101, ex:HIST305, ex:MATH101 .
+ex:_Bryce_Dalton a ex:Person ;
+  schema:name "Dalton, Bryce" ;
+  ex:enrolledIn ex:CHEM101, ex:CS101, ex:PSY101, ex:HIST110 .
+ex:_Howard_Gallagher a ex:Person ;
+  schema:name "Gallagher, Howard" ;
+  ex:enrolledIn ex:ECON330, ex:ECON101, ex:HIST110, ex:CHEM250 .
+ex:_James_Scott a ex:Person ;
+  schema:name "Scott, James" ;
+  ex:enrolledIn ex:STAT200, ex:HIST110, ex:PHYS101 .
+ex:_Ashley_Whitmore a ex:Person ;
+  schema:name "Whitmore, Ashley" ;
+  ex:enrolledIn ex:ENG410, ex:PSY101, ex:MATH101, ex:STAT200, ex:CS310 .
+ex:_Robert_Anderson a ex:Person ;
+  schema:name "Anderson, Robert" ;
+  ex:enrolledIn ex:ECON101, ex:CS310, ex:CS220 .
+ex:_Sean_Stratford a ex:Person ;
+  schema:name "Stratford, Sean" ;
+  ex:enrolledIn ex:CS101, ex:STAT410, ex:PSY101 .
+ex:_Cody_Garrison a ex:Person ;
+  schema:name "Garrison, Cody" ;
+  ex:enrolledIn ex:ENG410, ex:CS310, ex:STAT410, ex:PSY101 .
+ex:_Julian_Green a ex:Person ;
+  schema:name "Green, Julian" ;
+  ex:enrolledIn ex:PSY330, ex:MATH240, ex:CS220, ex:PSY101 .
+ex:_Philip_Davis a ex:Person ;
+  schema:name "Davis, Philip" ;
+  ex:enrolledIn ex:CS220, ex:ECON101, ex:PHYS220 .
+ex:_Trevor_Armstrong a ex:Person ;
+  schema:name "Armstrong, Trevor" ;
+  ex:enrolledIn ex:CS220, ex:HIST110, ex:CHEM101 .
+ex:_Violet_Washington a ex:Person ;
+  schema:name "Washington, Violet" ;
+  ex:enrolledIn ex:CHEM101, ex:ENG101, ex:CS101, ex:ECON101, ex:ECON330 .
+ex:_Nancy_Morris a ex:Person ;
+  schema:name "Morris, Nancy" ;
+  ex:enrolledIn ex:STAT200, ex:MATH101, ex:MATH240, ex:PHYS220, ex:CHEM101 .
+ex:_Spencer_Blair a ex:Person ;
+  schema:name "Blair, Spencer" ;
+  ex:enrolledIn ex:CS310, ex:PHYS101, ex:CS101 .
+ex:_Charlotte_Butler a ex:Person ;
+  schema:name "Butler, Charlotte" ;
+  ex:enrolledIn ex:HIST305, ex:STAT200, ex:MATH240, ex:ECON330 .
+ex:_Phoebe_Ward a ex:Person ;
+  schema:name "Ward, Phoebe" ;
+  ex:enrolledIn ex:ECON330, ex:MATH101, ex:ECON101, ex:STAT410, ex:PHYS101 .
+ex:_Scott_Lockwood a ex:Person ;
+  schema:name "Lockwood, Scott" ;
+  ex:enrolledIn ex:HIST110, ex:MATH350, ex:PHYS220 .
+ex:_Gregory_Caldwell a ex:Person ;
+  schema:name "Caldwell, Gregory" ;
+  ex:enrolledIn ex:PHYS220, ex:PSY330, ex:CS101, ex:STAT200, ex:HIST305 .
+ex:_Ryan_Lancaster a ex:Person ;
+  schema:name "Lancaster, Ryan" ;
+  ex:enrolledIn ex:HIST305, ex:CS220, ex:ECON330, ex:CHEM250, ex:MATH350 .
+ex:_Sharon_Cook a ex:Person ;
+  schema:name "Cook, Sharon" ;
+  ex:enrolledIn ex:ECON101, ex:CS310, ex:ENG101 .
+ex:_Lucas_Lopez a ex:Person ;
+  schema:name "Lopez, Lucas" ;
+  ex:enrolledIn ex:STAT200, ex:CS220, ex:ECON330 .
+ex:_Kenneth_Somerset a ex:Person ;
+  schema:name "Somerset, Kenneth" ;
+  ex:enrolledIn ex:ENG410, ex:CS220 .
+ex:_Harry_Wilson a ex:Person ;
+  schema:name "Wilson, Harry" ;
+  ex:enrolledIn ex:CS310, ex:CHEM250 .
+ex:_Jack_Nelson a ex:Person ;
+  schema:name "Nelson, Jack" ;
+  ex:enrolledIn ex:ECON330, ex:PHYS101, ex:PSY330, ex:ENG101 .
+ex:_Elena_Perez a ex:Person ;
+  schema:name "Perez, Elena" ;
+  ex:enrolledIn ex:STAT410, ex:CS101, ex:ENG410 .
+ex:_Alicia_Russell a ex:Person ;
+  schema:name "Russell, Alicia" ;
+  ex:enrolledIn ex:MATH240, ex:PHYS220, ex:ENG101, ex:MATH101 .
+ex:_Adam_Fairchild a ex:Person ;
+  schema:name "Fairchild, Adam" ;
+  ex:enrolledIn ex:HIST305, ex:CS310, ex:CS220 .
+ex:_Jason_Davis a ex:Person ;
+  schema:name "Davis, Jason" ;
+  ex:enrolledIn ex:MATH350, ex:HIST305, ex:MATH101, ex:CHEM101 .
+ex:_Samuel_Hastings a ex:Person ;
+  schema:name "Hastings, Samuel" ;
+  ex:enrolledIn ex:PSY101, ex:CS310, ex:CS220, ex:PHYS101, ex:CS101 .
+ex:_Nicole_Blair a ex:Person ;
+  schema:name "Blair, Nicole" ;
+  ex:enrolledIn ex:PHYS220, ex:STAT200 .
+ex:_Vanessa_Dalton a ex:Person ;
+  schema:name "Dalton, Vanessa" ;
+  ex:enrolledIn ex:CHEM101 .
+ex:_Sylvia_Rivera a ex:Person ;
+  schema:name "Rivera, Sylvia" ;
+  ex:enrolledIn ex:ENG410, ex:PHYS101, ex:MATH350 .
+ex:_Garrett_Murray a ex:Person ;
+  schema:name "Murray, Garrett" ;
+  ex:enrolledIn ex:MATH350, ex:CHEM101, ex:PSY101 .
+ex:_Carter_Quinn a ex:Person ;
+  schema:name "Quinn, Carter" ;
+  ex:enrolledIn ex:CS310, ex:CS220, ex:ECON330, ex:STAT410, ex:PSY101 .
+ex:_Donna_Edwards a ex:Person ;
+  schema:name "Edwards, Donna" ;
+  ex:enrolledIn ex:CS101, ex:CHEM101, ex:STAT410, ex:HIST110 .
+ex:_Brooke_Torres a ex:Person ;
+  schema:name "Torres, Brooke" ;
+  ex:enrolledIn ex:CS220, ex:ECON101, ex:HIST110, ex:ENG410, ex:MATH101 .
+ex:_Leah_Sinclair a ex:Person ;
+  schema:name "Sinclair, Leah" ;
+  ex:enrolledIn ex:ECON330, ex:PSY101, ex:MATH350 .
+ex:_Aisha_Powell a ex:Person ;
+  schema:name "Powell, Aisha" ;
+  ex:enrolledIn ex:ECON330, ex:PSY101, ex:STAT200 .
+ex:_Steven_Parker a ex:Person ;
+  schema:name "Parker, Steven" ;
+  ex:enrolledIn ex:PSY330, ex:ENG101, ex:CHEM250, ex:MATH101 .
+ex:_Dawn_Jackson a ex:Person ;
+  schema:name "Jackson, Dawn" ;
+  ex:enrolledIn ex:STAT200, ex:ENG101, ex:ECON101 .
+ex:_Zoey_Dixon a ex:Person ;
+  schema:name "Dixon, Zoey" ;
+  ex:enrolledIn ex:MATH240, ex:PSY330, ex:ENG410 .
+ex:_Robert_Wood a ex:Person ;
+  schema:name "Wood, Robert" ;
+  ex:enrolledIn ex:ENG101, ex:CS310, ex:MATH240 .
+ex:_Dominic_Diaz a ex:Person ;
+  schema:name "Diaz, Dominic" ;
+  ex:enrolledIn ex:ECON101, ex:PSY330, ex:CS101, ex:STAT410 .
+ex:_Holly_Caldwell a ex:Person ;
+  schema:name "Caldwell, Holly" ;
+  ex:enrolledIn ex:CS220, ex:PSY330, ex:HIST305, ex:PHYS101 .
+ex:_Adam_Somerset a ex:Person ;
+  schema:name "Somerset, Adam" ;
+  ex:enrolledIn ex:CS220, ex:CHEM101, ex:HIST110, ex:HIST305, ex:PHYS220 .
+ex:_Colin_Stanton a ex:Person ;
+  schema:name "Stanton, Colin" ;
+  ex:enrolledIn ex:MATH101, ex:MATH350, ex:PHYS220, ex:HIST305 .
+ex:_Adam_Ramirez a ex:Person ;
+  schema:name "Ramirez, Adam" ;
+  ex:enrolledIn ex:MATH240, ex:HIST305, ex:HIST110, ex:CS310 .
+ex:_Gregory_Roberts a ex:Person ;
+  schema:name "Roberts, Gregory" ;
+  ex:enrolledIn ex:HIST305, ex:MATH240, ex:CS101 .
+ex:_Lucy_Washington a ex:Person ;
+  schema:name "Washington, Lucy" ;
+  ex:enrolledIn ex:HIST110, ex:STAT410, ex:ECON330, ex:MATH350, ex:CS220 .
+ex:_Oscar_Washington a ex:Person ;
+  schema:name "Washington, Oscar" ;
+  ex:enrolledIn ex:CHEM101, ex:STAT410 .
+ex:_Eva_Whitman a ex:Person ;
+  schema:name "Whitman, Eva" ;
+  ex:enrolledIn ex:MATH240, ex:HIST110, ex:STAT200, ex:PHYS101 .
+ex:_Jeffrey_Wyndham a ex:Person ;
+  schema:name "Wyndham, Jeffrey" ;
+  ex:enrolledIn ex:STAT410, ex:HIST110, ex:ECON330 .
+ex:_James_Martin a ex:Person ;
+  schema:name "Martin, James" ;
+  ex:enrolledIn ex:MATH101, ex:ENG101, ex:HIST305 .
+ex:_Stephanie_Bloom a ex:Person ;
+  schema:name "Bloom, Stephanie" ;
+  ex:enrolledIn ex:ECON330, ex:PHYS101, ex:PSY330, ex:MATH101, ex:CS220 .
+ex:_Brenda_Prescott a ex:Person ;
+  schema:name "Prescott, Brenda" ;
+  ex:enrolledIn ex:PHYS101, ex:PSY101 .
+ex:_Brandon_Martinez a ex:Person ;
+  schema:name "Martinez, Brandon" ;
+  ex:enrolledIn ex:PHYS101, ex:ECON330, ex:CHEM250, ex:CHEM101, ex:PSY101 .
+ex:_Matthew_Evans a ex:Person ;
+  schema:name "Evans, Matthew" ;
+  ex:enrolledIn ex:PHYS101, ex:ENG101, ex:HIST305, ex:ECON101, ex:HIST110 .
+ex:_Troy_Martin a ex:Person ;
+  schema:name "Martin, Troy" ;
+  ex:enrolledIn ex:PHYS220, ex:ENG101, ex:CHEM101, ex:HIST305, ex:PSY330 .
+ex:_Jason_Pendleton a ex:Person ;
+  schema:name "Pendleton, Jason" ;
+  ex:enrolledIn ex:PHYS101, ex:HIST110, ex:ECON101, ex:CS220, ex:ENG410 .
+ex:_Matthew_Young a ex:Person ;
+  schema:name "Young, Matthew" ;
+  ex:enrolledIn ex:MATH350, ex:MATH240 .
+ex:_Kenneth_Remington a ex:Person ;
+  schema:name "Remington, Kenneth" ;
+  ex:enrolledIn ex:CHEM250, ex:STAT410, ex:CHEM101, ex:CS220, ex:PSY101 .
+ex:_Fiona_Halloway a ex:Person ;
+  schema:name "Halloway, Fiona" ;
+  ex:enrolledIn ex:ECON330, ex:PHYS101, ex:ENG101, ex:CS101 .
+ex:_Christian_Roberts a ex:Person ;
+  schema:name "Roberts, Christian" ;
+  ex:enrolledIn ex:MATH350, ex:STAT200, ex:ECON101 .
+ex:_Kathryn_Smith a ex:Person ;
+  schema:name "Smith, Kathryn" ;
+  ex:enrolledIn ex:MATH240, ex:PSY101, ex:STAT410, ex:CS101 .
+ex:_James_Quinn a ex:Person ;
+  schema:name "Quinn, James" ;
+  ex:enrolledIn ex:ECON330, ex:PSY101 .
+ex:_Claire_Dempsey a ex:Person ;
+  schema:name "Dempsey, Claire" ;
+  ex:enrolledIn ex:PHYS220, ex:ENG410, ex:PHYS101 .
+ex:_Michael_Prescott a ex:Person ;
+  schema:name "Prescott, Michael" ;
+  ex:enrolledIn ex:STAT200, ex:HIST110, ex:ECON101 .
+ex:_Jonathan_Griffin a ex:Person ;
+  schema:name "Griffin, Jonathan" ;
+  ex:enrolledIn ex:ENG410, ex:MATH240, ex:CS101, ex:MATH350 .
+ex:_Amanda_Lancaster a ex:Person ;
+  schema:name "Lancaster, Amanda" ;
+  ex:enrolledIn ex:ECON101, ex:ECON330, ex:PSY330 .
+ex:_Thomas_Sinclair a ex:Person ;
+  schema:name "Sinclair, Thomas" ;
+  ex:enrolledIn ex:PHYS101, ex:PHYS220, ex:HIST305, ex:ECON101 .
+ex:_Todd_Morris a ex:Person ;
+  schema:name "Morris, Todd" ;
+  ex:enrolledIn ex:CS310, ex:HIST110, ex:ECON330, ex:PSY330, ex:ENG101 .
+ex:_Thomas_Lockwood a ex:Person ;
+  schema:name "Lockwood, Thomas" ;
+  ex:enrolledIn ex:PSY101, ex:HIST305, ex:CHEM101, ex:CS310, ex:PHYS220 .
+ex:_Charlotte_Prescott a ex:Person ;
+  schema:name "Prescott, Charlotte" ;
+  ex:enrolledIn ex:CS101, ex:PHYS101, ex:STAT200 .
+ex:_Emma_Garcia a ex:Person ;
+  schema:name "Garcia, Emma" ;
+  ex:enrolledIn ex:ECON101, ex:CHEM250, ex:PHYS101 .
+ex:_Catherine_Lancaster a ex:Person ;
+  schema:name "Lancaster, Catherine" ;
+  ex:enrolledIn ex:CHEM101, ex:CS101, ex:PHYS220, ex:HIST110 .
+ex:_Michael_Garcia a ex:Person ;
+  schema:name "Garcia, Michael" ;
+  ex:enrolledIn ex:STAT410, ex:CHEM101, ex:ENG101, ex:ENG410, ex:CHEM250 .
+ex:_Kathleen_Baker a ex:Person ;
+  schema:name "Baker, Kathleen" ;
+  ex:enrolledIn ex:PSY101, ex:ENG410 .
+ex:_Ella_Stratford a ex:Person ;
+  schema:name "Stratford, Ella" ;
+  ex:enrolledIn ex:ENG101, ex:CHEM250 .
+ex:_Sophia_Lancaster a ex:Person ;
+  schema:name "Lancaster, Sophia" ;
+  ex:enrolledIn ex:CHEM101, ex:HIST305, ex:CS101, ex:ECON101 .
+ex:_Julia_Prescott a ex:Person ;
+  schema:name "Prescott, Julia" ;
+  ex:enrolledIn ex:CS101, ex:STAT410, ex:CHEM101 .
+ex:_Morgan_Brooks a ex:Person ;
+  schema:name "Brooks, Morgan" ;
+  ex:enrolledIn ex:HIST110, ex:PHYS220 .
+ex:_Caroline_Rodriguez a ex:Person ;
+  schema:name "Rodriguez, Caroline" ;
+  ex:enrolledIn ex:PSY101, ex:CHEM250, ex:HIST305 .
+ex:_Ethan_Somerset a ex:Person ;
+  schema:name "Somerset, Ethan" ;
+  ex:enrolledIn ex:ENG410, ex:CS220, ex:ENG101, ex:PSY101 .
+ex:_Jacob_Roberts a ex:Person ;
+  schema:name "Roberts, Jacob" ;
+  ex:enrolledIn ex:STAT200, ex:MATH101, ex:HIST110 .
+ex:_Tyler_Whitman a ex:Person ;
+  schema:name "Whitman, Tyler" ;
+  ex:enrolledIn ex:PHYS220, ex:ECON330, ex:CHEM101 .
+ex:_Deborah_Lee a ex:Person ;
+  schema:name "Lee, Deborah" ;
+  ex:enrolledIn ex:MATH240, ex:CS101, ex:ENG410, ex:PSY101, ex:MATH350 .
+ex:_Casey_Morgan a ex:Person ;
+  schema:name "Morgan, Casey" ;
+  ex:enrolledIn ex:ECON101, ex:STAT200, ex:PHYS101 .
+ex:_Monica_Jenkins a ex:Person ;
+  schema:name "Jenkins, Monica" ;
+  ex:enrolledIn ex:MATH350, ex:CS220, ex:MATH240 .
+ex:_John_Murphy a ex:Person ;
+  schema:name "Murphy, John" ;
+  ex:enrolledIn ex:STAT200, ex:MATH240, ex:CHEM101, ex:STAT410, ex:ENG410 .
+ex:_Maria_Halloway a ex:Person ;
+  schema:name "Halloway, Maria" ;
+  ex:enrolledIn ex:MATH240, ex:ECON330, ex:CS220, ex:CS310, ex:HIST110 .
+ex:_Rebecca_Quinn a ex:Person ;
+  schema:name "Quinn, Rebecca" ;
+  ex:enrolledIn ex:CS310, ex:MATH350, ex:ENG410, ex:ENG101, ex:HIST305 .
+ex:_Marie_Stanton a ex:Person ;
+  schema:name "Stanton, Marie" ;
+  ex:enrolledIn ex:CS101, ex:ECON101 .
+ex:_Laura_Radcliffe a ex:Person ;
+  schema:name "Radcliffe, Laura" ;
+  ex:enrolledIn ex:CS310, ex:MATH240, ex:PSY101 .
+ex:_Alvin_Whitman a ex:Person ;
+  schema:name "Whitman, Alvin" ;
+  ex:enrolledIn ex:CHEM250, ex:MATH350, ex:STAT410, ex:ECON330 .
+ex:_Ivan_Kingsley a ex:Person ;
+  schema:name "Kingsley, Ivan" ;
+  ex:enrolledIn ex:MATH101, ex:STAT410, ex:ENG101 .
+ex:_Pamela_Diaz a ex:Person ;
+  schema:name "Diaz, Pamela" ;
+  ex:enrolledIn ex:HIST305, ex:MATH240, ex:PSY101 .
+ex:_Caroline_Allenby a ex:Person ;
+  schema:name "Allenby, Caroline" ;
+  ex:enrolledIn ex:ENG101, ex:HIST305, ex:MATH240 .
+ex:_Sylvia_Roberts a ex:Person ;
+  schema:name "Roberts, Sylvia" ;
+  ex:enrolledIn ex:HIST305, ex:MATH101, ex:PSY101 .
+ex:_Edward_Lopez a ex:Person ;
+  schema:name "Lopez, Edward" ;
+  ex:enrolledIn ex:PHYS220, ex:CHEM250, ex:CHEM101, ex:PHYS101 .
+ex:_James_Thayer a ex:Person ;
+  schema:name "Thayer, James" ;
+  ex:enrolledIn ex:PHYS220, ex:HIST305, ex:CS101, ex:CS310, ex:STAT200 .
+ex:_Amir_Henderson a ex:Person ;
+  schema:name "Henderson, Amir" ;
+  ex:enrolledIn ex:ENG410, ex:CS101 .
+ex:_Garrett_Harrington a ex:Person ;
+  schema:name "Harrington, Garrett" ;
+  ex:enrolledIn ex:CHEM101, ex:ECON330, ex:PHYS220 .
+ex:_David_Rivera a ex:Person ;
+  schema:name "Rivera, David" ;
+  ex:enrolledIn ex:PHYS220, ex:MATH101, ex:PSY101, ex:ECON330 .
+ex:_Leslie_Reed a ex:Person ;
+  schema:name "Reed, Leslie" ;
+  ex:enrolledIn ex:CS310, ex:ENG101, ex:HIST110 .
+ex:_Lucas_Montgomery a ex:Person ;
+  schema:name "Montgomery, Lucas" ;
+  ex:enrolledIn ex:ENG410, ex:PSY330 .
+ex:_Kelly_Simmons a ex:Person ;
+  schema:name "Simmons, Kelly" ;
+  ex:enrolledIn ex:ENG101, ex:MATH240, ex:ECON101, ex:CHEM250, ex:STAT410 .
+ex:_Dean_Brighton a ex:Person ;
+  schema:name "Brighton, Dean" ;
+  ex:enrolledIn ex:CHEM101, ex:CS310, ex:MATH350 .
+ex:_Casey_Dixon a ex:Person ;
+  schema:name "Dixon, Casey" ;
+  ex:enrolledIn ex:PHYS220, ex:ECON101, ex:CHEM250 .
+ex:_Stephen_Nelson a ex:Person ;
+  schema:name "Nelson, Stephen" ;
+  ex:enrolledIn ex:HIST110, ex:PHYS220, ex:CHEM250, ex:PSY330, ex:CS310 .
+ex:_Dean_Sanders a ex:Person ;
+  schema:name "Sanders, Dean" ;
+  ex:enrolledIn ex:CS101, ex:MATH350, ex:PHYS220, ex:STAT200 .
+ex:_Kathryn_Drake a ex:Person ;
+  schema:name "Drake, Kathryn" ;
+  ex:enrolledIn ex:CS220, ex:STAT410, ex:CS310 .
+ex:_Cody_Allen a ex:Person ;
+  schema:name "Allen, Cody" ;
+  ex:enrolledIn ex:PSY101, ex:CS101, ex:CHEM250, ex:ENG410 .
+ex:_Andrew_Kelly a ex:Person ;
+  schema:name "Kelly, Andrew" ;
+  ex:enrolledIn ex:CS220, ex:PSY330 .
+ex:_Jonathan_Harris a ex:Person ;
+  schema:name "Harris, Jonathan" ;
+  ex:enrolledIn ex:PSY101, ex:MATH350, ex:PHYS101 .
+ex:_Laura_Stewart a ex:Person ;
+  schema:name "Stewart, Laura" ;
+  ex:enrolledIn ex:ENG410, ex:CHEM250, ex:PHYS101 .
+ex:_Eric_Nelson a ex:Person ;
+  schema:name "Nelson, Eric" ;
+  ex:enrolledIn ex:CS310, ex:MATH350, ex:PHYS220, ex:PSY330, ex:CHEM250 .
+ex:_Isaiah_Garrison a ex:Person ;
+  schema:name "Garrison, Isaiah" ;
+  ex:enrolledIn ex:PHYS101, ex:HIST305, ex:CS220 .
+ex:_Sandra_Campbell a ex:Person ;
+  schema:name "Campbell, Sandra" ;
+  ex:enrolledIn ex:PSY101, ex:CHEM250, ex:MATH350, ex:MATH240 .
+ex:_Amelia_Lancaster a ex:Person ;
+  schema:name "Lancaster, Amelia" ;
+  ex:enrolledIn ex:PSY330, ex:ENG410, ex:MATH101, ex:STAT200 .
+ex:_Bryan_Gray a ex:Person ;
+  schema:name "Gray, Bryan" ;
+  ex:enrolledIn ex:PHYS220, ex:ENG410, ex:HIST110, ex:PSY330 .
+ex:_Brian_Wood a ex:Person ;
+  schema:name "Wood, Brian" ;
+  ex:enrolledIn ex:HIST305, ex:CS101, ex:ECON101 .
+ex:_Alicia_Perez a ex:Person ;
+  schema:name "Perez, Alicia" ;
+  ex:enrolledIn ex:MATH240, ex:PHYS101, ex:ENG410 .
+ex:_Garrett_Hastings a ex:Person ;
+  schema:name "Hastings, Garrett" ;
+  ex:enrolledIn ex:STAT200, ex:PHYS220, ex:ENG101, ex:ECON101 .
+ex:_Kimberly_Nichols a ex:Person ;
+  schema:name "Nichols, Kimberly" ;
+  ex:enrolledIn ex:CHEM250, ex:STAT410, ex:ENG410 .
+ex:_Caroline_Hastings a ex:Person ;
+  schema:name "Hastings, Caroline" ;
+  ex:enrolledIn ex:PSY330, ex:CS220, ex:CS101, ex:PSY101, ex:ECON330 .
+ex:_Lucas_Thompson a ex:Person ;
+  schema:name "Thompson, Lucas" ;
+  ex:enrolledIn ex:MATH350, ex:HIST305, ex:CS220, ex:PHYS220 .
+ex:_Elena_Cooper a ex:Person ;
+  schema:name "Cooper, Elena" ;
+  ex:enrolledIn ex:HIST110, ex:CHEM101, ex:ECON330, ex:CHEM250, ex:CS220 .
+ex:_Derek_Rogers a ex:Person ;
+  schema:name "Rogers, Derek" ;
+  ex:enrolledIn ex:ENG410, ex:ECON101, ex:ENG101, ex:ECON330, ex:STAT410 .
+ex:_Isaac_Vaughn a ex:Person ;
+  schema:name "Vaughn, Isaac" ;
+  ex:enrolledIn ex:PHYS220, ex:MATH350, ex:CHEM250, ex:CS220 .
+ex:_Claudia_Hughes a ex:Person ;
+  schema:name "Hughes, Claudia" ;
+  ex:enrolledIn ex:HIST110, ex:MATH240, ex:ENG410, ex:PSY101, ex:STAT410 .
+ex:_Ella_Blair a ex:Person ;
+  schema:name "Blair, Ella" ;
+  ex:enrolledIn ex:MATH240, ex:CHEM101, ex:CS101 .
+ex:_Ashley_Somerset a ex:Person ;
+  schema:name "Somerset, Ashley" ;
+  ex:enrolledIn ex:MATH350, ex:HIST110, ex:MATH101, ex:CHEM101 .
+ex:_Garrett_Kendrick a ex:Person ;
+  schema:name "Kendrick, Garrett" ;
+  ex:enrolledIn ex:HIST110, ex:CS101, ex:CS220, ex:HIST305, ex:CHEM250 .
+ex:_Isaiah_Sanders a ex:Person ;
+  schema:name "Sanders, Isaiah" ;
+  ex:enrolledIn ex:ENG410, ex:CS220, ex:PHYS101 .
+ex:_Sabrina_Kingsley a ex:Person ;
+  schema:name "Kingsley, Sabrina" ;
+  ex:enrolledIn ex:ENG410, ex:CS101 .
+ex:_Alexandra_Roberts a ex:Person ;
+  schema:name "Roberts, Alexandra" ;
+  ex:enrolledIn ex:PHYS220, ex:CHEM250, ex:CS310 .
+ex:_Courtney_Prescott a ex:Person ;
+  schema:name "Prescott, Courtney" ;
+  ex:enrolledIn ex:STAT200, ex:PHYS220, ex:STAT410, ex:CS220, ex:PHYS101 .
+ex:_Amelia_Rogers a ex:Person ;
+  schema:name "Rogers, Amelia" ;
+  ex:enrolledIn ex:CHEM250, ex:HIST305, ex:STAT200, ex:CS101 .
+ex:_Shannon_Johnson a ex:Person ;
+  schema:name "Johnson, Shannon" ;
+  ex:enrolledIn ex:MATH350, ex:CHEM101, ex:CHEM250 .
+ex:_Alexandra_Green a ex:Person ;
+  schema:name "Green, Alexandra" ;
+  ex:enrolledIn ex:ECON330, ex:PSY330, ex:CS310 .
+ex:_Preston_Gray a ex:Person ;
+  schema:name "Gray, Preston" ;
+  ex:enrolledIn ex:HIST305, ex:CS101, ex:CHEM250, ex:ECON101 .
+ex:_Alvin_Williams a ex:Person ;
+  schema:name "Williams, Alvin" ;
+  ex:enrolledIn ex:ENG101, ex:CS101, ex:ECON101, ex:CS310 .
+ex:_Angela_Beaumont a ex:Person ;
+  schema:name "Beaumont, Angela" ;
+  ex:enrolledIn ex:CHEM101, ex:STAT200 .
+ex:_Jamie_Robinson a ex:Person ;
+  schema:name "Robinson, Jamie" ;
+  ex:enrolledIn ex:MATH240, ex:CHEM250 .
+ex:_Howard_Sterling a ex:Person ;
+  schema:name "Sterling, Howard" ;
+  ex:enrolledIn ex:MATH240, ex:STAT410, ex:CS310 .
+ex:_Sabrina_Taylor a ex:Person ;
+  schema:name "Taylor, Sabrina" ;
+  ex:enrolledIn ex:MATH240, ex:MATH101, ex:ECON101 .
+ex:_Jared_Fitzpatrick a ex:Person ;
+  schema:name "Fitzpatrick, Jared" ;
+  ex:enrolledIn ex:STAT200, ex:HIST305, ex:CHEM101, ex:PHYS101 .
+ex:_Rachel_Garcia a ex:Person ;
+  schema:name "Garcia, Rachel" ;
+  ex:enrolledIn ex:PSY330, ex:CHEM101, ex:CS101 .
+ex:_Nicholas_Lewis a ex:Person ;
+  schema:name "Lewis, Nicholas" ;
+  ex:enrolledIn ex:ECON330, ex:PHYS220 .
+ex:_Leah_White a ex:Person ;
+  schema:name "White, Leah" ;
+  ex:enrolledIn ex:CS101, ex:PHYS220 .
+ex:_Nancy_Barnes a ex:Person ;
+  schema:name "Barnes, Nancy" ;
+  ex:enrolledIn ex:CHEM101, ex:ECON330, ex:MATH101 .
+ex:_Kayla_Ramirez a ex:Person ;
+  schema:name "Ramirez, Kayla" ;
+  ex:enrolledIn ex:ENG101, ex:STAT200 .
+ex:_Eric_Brighton a ex:Person ;
+  schema:name "Brighton, Eric" ;
+  ex:enrolledIn ex:CHEM250, ex:PSY330, ex:STAT200, ex:PHYS220 .
+ex:_Walter_Cook a ex:Person ;
+  schema:name "Cook, Walter" ;
+  ex:enrolledIn ex:CHEM101, ex:ENG101, ex:PHYS101 .
+ex:_Leonard_Ward a ex:Person ;
+  schema:name "Ward, Leonard" ;
+  ex:enrolledIn ex:ENG410, ex:CS220 .
+ex:_Kelly_Barnes a ex:Person ;
+  schema:name "Barnes, Kelly" ;
+  ex:enrolledIn ex:HIST305, ex:HIST110, ex:MATH240, ex:STAT410 .
+ex:_Cody_Young a ex:Person ;
+  schema:name "Young, Cody" ;
+  ex:enrolledIn ex:ECON101, ex:ENG410 .
+ex:_Travis_Wilson a ex:Person ;
+  schema:name "Wilson, Travis" ;
+  ex:enrolledIn ex:ENG410, ex:CHEM101, ex:HIST110, ex:CHEM250 .
+ex:_Sara_Thompson a ex:Person ;
+  schema:name "Thompson, Sara" ;
+  ex:enrolledIn ex:MATH240, ex:ECON330 .
+ex:_Lillian_Ashford a ex:Person ;
+  schema:name "Ashford, Lillian" ;
+  ex:enrolledIn ex:PHYS220, ex:MATH101, ex:PSY101 .
+ex:_Melissa_Bailey a ex:Person ;
+  schema:name "Bailey, Melissa" ;
+  ex:enrolledIn ex:STAT200, ex:CS220, ex:STAT410, ex:ECON330 .
+ex:_Rebecca_Washington a ex:Person ;
+  schema:name "Washington, Rebecca" ;
+  ex:enrolledIn ex:ENG410, ex:PHYS220, ex:ECON330 .
+ex:_Faith_Rodriguez a ex:Person ;
+  schema:name "Rodriguez, Faith" ;
+  ex:enrolledIn ex:PSY330, ex:HIST305, ex:PHYS220, ex:PSY101, ex:CS101 .
+ex:_Casey_Stratford a ex:Person ;
+  schema:name "Stratford, Casey" ;
+  ex:enrolledIn ex:CHEM101, ex:ECON330, ex:ENG101, ex:CS220 .
+ex:_Margaret_Russell a ex:Person ;
+  schema:name "Russell, Margaret" ;
+  ex:enrolledIn ex:MATH350, ex:PSY330, ex:STAT200, ex:STAT410 .
+ex:_Claire_Hayes a ex:Person ;
+  schema:name "Hayes, Claire" ;
+  ex:enrolledIn ex:ECON101, ex:CS101 .
+ex:_Clara_Harrington a ex:Person ;
+  schema:name "Harrington, Clara" ;
+  ex:enrolledIn ex:ECON330, ex:HIST305, ex:HIST110, ex:MATH101 .
+ex:_Eric_Roth a ex:Person ;
+  schema:name "Roth, Eric" ;
+  ex:enrolledIn ex:MATH101, ex:PSY101, ex:STAT410, ex:CHEM101, ex:CS310 .
+ex:_Alice_Walker a ex:Person ;
+  schema:name "Walker, Alice" ;
+  ex:enrolledIn ex:MATH240, ex:ENG101, ex:CHEM101 .
+ex:_Lauren_Long a ex:Person ;
+  schema:name "Long, Lauren" ;
+  ex:enrolledIn ex:CS310, ex:CS101, ex:PHYS101, ex:ECON330 .
+ex:_Catherine_Adams a ex:Person ;
+  schema:name "Adams, Catherine" ;
+  ex:enrolledIn ex:ENG410, ex:STAT200, ex:ENG101 .
+ex:_Crystal_Rogers a ex:Person ;
+  schema:name "Rogers, Crystal" ;
+  ex:enrolledIn ex:PSY101, ex:MATH350, ex:MATH101, ex:PHYS220, ex:ENG101 .
+ex:_Cara_Cooper a ex:Person ;
+  schema:name "Cooper, Cara" ;
+  ex:enrolledIn ex:ECON330, ex:STAT410 .
+ex:_Logan_Smith a ex:Person ;
+  schema:name "Smith, Logan" ;
+  ex:enrolledIn ex:STAT200, ex:CS310, ex:HIST110, ex:STAT410 .
+ex:_Spencer_Remington a ex:Person ;
+  schema:name "Remington, Spencer" ;
+  ex:enrolledIn ex:CS101, ex:HIST110, ex:ECON330, ex:HIST305 .
+ex:_Bryan_Taylor a ex:Person ;
+  schema:name "Taylor, Bryan" ;
+  ex:enrolledIn ex:PHYS220, ex:CHEM250 .
+ex:_Caroline_Wright a ex:Person ;
+  schema:name "Wright, Caroline" ;
+  ex:enrolledIn ex:HIST305, ex:STAT410, ex:MATH101, ex:ECON101 .
+ex:_Kevin_Foster a ex:Person ;
+  schema:name "Foster, Kevin" ;
+  ex:enrolledIn ex:CHEM250, ex:CS101, ex:PSY101 .
+ex:_Yvonne_Thompson a ex:Person ;
+  schema:name "Thompson, Yvonne" ;
+  ex:enrolledIn ex:HIST305, ex:PSY330 .
+ex:_Melanie_Smith a ex:Person ;
+  schema:name "Smith, Melanie" ;
+  ex:enrolledIn ex:PHYS220, ex:CHEM250, ex:ECON101 .
+ex:_Donna_Wright a ex:Person ;
+  schema:name "Wright, Donna" ;
+  ex:enrolledIn ex:CHEM250, ex:STAT410, ex:ENG410, ex:ECON101 .
+ex:_Spencer_Adams a ex:Person ;
+  schema:name "Adams, Spencer" ;
+  ex:enrolledIn ex:ECON101, ex:PHYS101 .
+ex:_Aaron_Gray a ex:Person ;
+  schema:name "Gray, Aaron" ;
+  ex:enrolledIn ex:STAT410, ex:HIST305, ex:CHEM101 .
+ex:_Dawn_Whitmore a ex:Person ;
+  schema:name "Whitmore, Dawn" ;
+  ex:enrolledIn ex:CHEM101, ex:PSY330, ex:ENG410 .
+ex:_Faith_Russell a ex:Person ;
+  schema:name "Russell, Faith" ;
+  ex:enrolledIn ex:MATH350, ex:ENG410 .
+ex:_Xander_Allen a ex:Person ;
+  schema:name "Allen, Xander" ;
+  ex:enrolledIn ex:MATH240, ex:HIST305, ex:PSY101 .
+ex:_Gregory_Rivera a ex:Person ;
+  schema:name "Rivera, Gregory" ;
+  ex:enrolledIn ex:STAT200, ex:CS310, ex:HIST110, ex:PSY101 .
+ex:_Karen_Simmons a ex:Person ;
+  schema:name "Simmons, Karen" ;
+  ex:enrolledIn ex:PSY330, ex:CS220, ex:CS310, ex:MATH240 .
+ex:_Stephen_Halloway a ex:Person ;
+  schema:name "Halloway, Stephen" ;
+  ex:enrolledIn ex:ENG101, ex:CS310, ex:CS101 .
+ex:_Zachary_Hughes a ex:Person ;
+  schema:name "Hughes, Zachary" ;
+  ex:enrolledIn ex:PSY330, ex:MATH350, ex:PSY101, ex:CS101 .
+ex:_Cara_Campbell a ex:Person ;
+  schema:name "Campbell, Cara" ;
+  ex:enrolledIn ex:MATH101, ex:PSY101, ex:PHYS101 .
+ex:_Beth_Sanchez a ex:Person ;
+  schema:name "Sanchez, Beth" ;
+  ex:enrolledIn ex:ECON330, ex:PSY101, ex:MATH101, ex:CS220, ex:ECON101 .
+ex:_Ariana_Ward a ex:Person ;
+  schema:name "Ward, Ariana" ;
+  ex:enrolledIn ex:PSY330, ex:CS101, ex:MATH350, ex:CS310, ex:CS220 .
+ex:_Julian_Sinclair a ex:Person ;
+  schema:name "Sinclair, Julian" ;
+  ex:enrolledIn ex:CS101, ex:MATH350, ex:ECON330, ex:CHEM101 .
+ex:_Pamela_Scott a ex:Person ;
+  schema:name "Scott, Pamela" ;
+  ex:enrolledIn ex:MATH101, ex:CS310, ex:HIST110, ex:PSY330, ex:PHYS220 .
+ex:_Xavier_Rogers a ex:Person ;
+  schema:name "Rogers, Xavier" ;
+  ex:enrolledIn ex:PSY101, ex:CS220, ex:MATH101 .
+ex:_Violet_Whitman a ex:Person ;
+  schema:name "Whitman, Violet" ;
+  ex:enrolledIn ex:MATH350, ex:MATH101, ex:ECON101 .
+ex:_Paul_Sanchez a ex:Person ;
+  schema:name "Sanchez, Paul" ;
+  ex:enrolledIn ex:CHEM250, ex:PHYS101 .
+ex:_Christian_Black a ex:Person ;
+  schema:name "Black, Christian" ;
+  ex:enrolledIn ex:MATH240, ex:ECON330, ex:CHEM250 .
+ex:_Cody_Wood a ex:Person ;
+  schema:name "Wood, Cody" ;
+  ex:enrolledIn ex:MATH240, ex:CS310, ex:PSY101, ex:CS101 .
+ex:_Adam_Butler a ex:Person ;
+  schema:name "Butler, Adam" ;
+  ex:enrolledIn ex:CS220, ex:STAT410, ex:MATH350, ex:MATH240 .
+ex:_Cara_James a ex:Person ;
+  schema:name "James, Cara" ;
+  ex:enrolledIn ex:MATH240, ex:HIST110, ex:CS101, ex:PHYS101, ex:PHYS220 .
+ex:_Alicia_Pendleton a ex:Person ;
+  schema:name "Pendleton, Alicia" ;
+  ex:enrolledIn ex:STAT410, ex:MATH101 .
+ex:_Sophia_Talbot a ex:Person ;
+  schema:name "Talbot, Sophia" ;
+  ex:enrolledIn ex:ENG410, ex:PSY330, ex:STAT410, ex:PHYS220 .
+ex:_Zachary_Remington a ex:Person ;
+  schema:name "Remington, Zachary" ;
+  ex:enrolledIn ex:CS310, ex:STAT410, ex:PHYS220, ex:MATH350, ex:ECON101 .
+ex:_Wendy_Simmons a ex:Person ;
+  schema:name "Simmons, Wendy" ;
+  ex:enrolledIn ex:STAT200, ex:ECON330, ex:HIST110, ex:CS310 .
+ex:_Hailey_Caldwell a ex:Person ;
+  schema:name "Caldwell, Hailey" ;
+  ex:enrolledIn ex:CHEM250, ex:MATH350 .
+ex:_Caitlin_Lennox a ex:Person ;
+  schema:name "Lennox, Caitlin" ;
+  ex:enrolledIn ex:PSY330, ex:MATH240, ex:ENG410 .
+ex:_Brian_Brooks a ex:Person ;
+  schema:name "Brooks, Brian" ;
+  ex:enrolledIn ex:ENG101, ex:HIST110, ex:CS101, ex:CS220 .
+ex:_Jack_Beaumont a ex:Person ;
+  schema:name "Beaumont, Jack" ;
+  ex:enrolledIn ex:CHEM101, ex:PSY330, ex:ECON330, ex:CHEM250 .
+ex:_Madison_King a ex:Person ;
+  schema:name "King, Madison" ;
+  ex:enrolledIn ex:STAT200, ex:PHYS101, ex:ENG410, ex:PSY101 .
+ex:_Amy_Russell a ex:Person ;
+  schema:name "Russell, Amy" ;
+  ex:enrolledIn ex:ENG410, ex:PHYS220, ex:PSY101 .
+ex:_Robert_Foster a ex:Person ;
+  schema:name "Foster, Robert" ;
+  ex:enrolledIn ex:CS310, ex:HIST305, ex:ECON330, ex:CHEM250, ex:MATH240 .
+ex:_Erica_Torres a ex:Person ;
+  schema:name "Torres, Erica" ;
+  ex:enrolledIn ex:CS101, ex:CS220, ex:PSY101, ex:PHYS101, ex:CS310 .
+ex:_Lucy_Clark a ex:Person ;
+  schema:name "Clark, Lucy" ;
+  ex:enrolledIn ex:STAT410, ex:CHEM101, ex:MATH101, ex:ECON330, ex:HIST305 .
+ex:_Fiona_Baker a ex:Person ;
+  schema:name "Baker, Fiona" ;
+  ex:enrolledIn ex:CS220, ex:MATH101, ex:STAT410, ex:PHYS101 .
+ex:_Valerie_Whitman a ex:Person ;
+  schema:name "Whitman, Valerie" ;
+  ex:enrolledIn ex:PSY330, ex:MATH240, ex:ECON330 .
+ex:_Tiffany_Clark a ex:Person ;
+  schema:name "Clark, Tiffany" ;
+  ex:enrolledIn ex:STAT410, ex:MATH350, ex:HIST110 .
+ex:_Aisha_Sanders a ex:Person ;
+  schema:name "Sanders, Aisha" ;
+  ex:enrolledIn ex:ECON330, ex:CS220, ex:CHEM250, ex:MATH350 .
+ex:_Emma_Young a ex:Person ;
+  schema:name "Young, Emma" ;
+  ex:enrolledIn ex:MATH350, ex:ECON330, ex:CHEM250, ex:HIST110 .
+ex:_Michelle_Harris a ex:Person ;
+  schema:name "Harris, Michelle" ;
+  ex:enrolledIn ex:MATH240, ex:ECON101, ex:PHYS101, ex:CS220 .
+ex:_Gabriel_Montgomery a ex:Person ;
+  schema:name "Montgomery, Gabriel" ;
+  ex:enrolledIn ex:ECON101, ex:ENG410, ex:STAT410, ex:HIST305, ex:PSY101 .
+ex:_Jennifer_Kendrick a ex:Person ;
+  schema:name "Kendrick, Jennifer" ;
+  ex:enrolledIn ex:STAT410, ex:CHEM101, ex:PHYS101 .
+ex:_David_Quinn a ex:Person ;
+  schema:name "Quinn, David" ;
+  ex:enrolledIn ex:HIST305, ex:CS220, ex:HIST110, ex:PSY101 .
+ex:_Ariana_Rogers a ex:Person ;
+  schema:name "Rogers, Ariana" ;
+  ex:enrolledIn ex:CHEM250, ex:HIST110, ex:CHEM101, ex:STAT410 .
+ex:_Hope_Eastman a ex:Person ;
+  schema:name "Eastman, Hope" ;
+  ex:enrolledIn ex:HIST305, ex:HIST110, ex:STAT200 .
+ex:_Courtney_Kelly a ex:Person ;
+  schema:name "Kelly, Courtney" ;
+  ex:enrolledIn ex:MATH240, ex:CS101, ex:ENG101 .
+ex:_Gavin_Martinez a ex:Person ;
+  schema:name "Martinez, Gavin" ;
+  ex:enrolledIn ex:PHYS220, ex:PHYS101, ex:HIST110, ex:MATH240 .
+ex:_Robert_Thomas a ex:Person ;
+  schema:name "Thomas, Robert" ;
+  ex:enrolledIn ex:PSY101, ex:HIST110, ex:CS220 .
+ex:_Dean_Allen a ex:Person ;
+  schema:name "Allen, Dean" ;
+  ex:enrolledIn ex:PSY330, ex:PHYS101, ex:STAT200, ex:MATH350, ex:CS310 .
+ex:_Stephanie_Remington a ex:Person ;
+  schema:name "Remington, Stephanie" ;
+  ex:enrolledIn ex:ECON330, ex:CS101, ex:HIST305, ex:ENG410 .
+ex:_Brian_Martinez a ex:Person ;
+  schema:name "Martinez, Brian" ;
+  ex:enrolledIn ex:STAT410, ex:HIST110 .
+ex:_Linda_Richardson a ex:Person ;
+  schema:name "Richardson, Linda" ;
+  ex:enrolledIn ex:PHYS220, ex:CS220, ex:ENG410, ex:ECON101, ex:STAT200 .
+ex:_Leslie_Torres a ex:Person ;
+  schema:name "Torres, Leslie" ;
+  ex:enrolledIn ex:HIST110, ex:ECON101, ex:CS310, ex:CHEM250 .
+ex:_Frederick_White a ex:Person ;
+  schema:name "White, Frederick" ;
+  ex:enrolledIn ex:PHYS101, ex:CS220 .
+ex:_Jane_Baker a ex:Person ;
+  schema:name "Baker, Jane" ;
+  ex:enrolledIn ex:CHEM250, ex:CS101, ex:ENG410, ex:STAT200 .

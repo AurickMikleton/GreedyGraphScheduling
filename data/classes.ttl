@@ -1,0 +1,108 @@
+@prefix ex:  <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+###############################################
+# Classes
+###############################################
+
+ex:CS101 a ex:Class ;
+    rdfs:label "Intro to Computer Science" ;
+    ex:hasMinimumRoomCapacity 125 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:CS220 a ex:Class ;
+    rdfs:label "Data Structures" ;
+    ex:hasMinimumRoomCapacity 75 ;
+    ex:examDuration "3.0"^^xsd:decimal .
+
+ex:CS310 a ex:Class ;
+    rdfs:label "Algorithms" ;
+    ex:hasMinimumRoomCapacity 60 ;
+    ex:examDuration "3.0"^^xsd:decimal .
+
+ex:MATH101 a ex:Class ;
+    rdfs:label "College Algebra" ;
+    ex:hasMinimumRoomCapacity 90 ;
+    ex:examDuration "1.5"^^xsd:decimal .
+
+ex:MATH240 a ex:Class ;
+    rdfs:label "Linear Algebra" ;
+    ex:hasMinimumRoomCapacity 55 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:MATH350 a ex:Class ;
+    rdfs:label "Probability Theory" ;
+    ex:hasMinimumRoomCapacity 45 ;
+    ex:examDuration "3.0"^^xsd:decimal .
+
+ex:PHYS101 a ex:Class ;
+    rdfs:label "Physics I" ;
+    ex:hasMinimumRoomCapacity 110 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:PHYS220 a ex:Class ;
+    rdfs:label "Modern Physics" ;
+    ex:hasMinimumRoomCapacity 40 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:HIST110 a ex:Class ;
+    rdfs:label "World History" ;
+    ex:hasMinimumRoomCapacity 80 ;
+    ex:examDuration "1.5"^^xsd:decimal .
+
+ex:HIST305 a ex:Class ;
+    rdfs:label "European History" ;
+    ex:hasMinimumRoomCapacity 35 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:ENG101 a ex:Class ;
+    rdfs:label "English Composition" ;
+    ex:hasMinimumRoomCapacity 100 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:ENG410 a ex:Class ;
+    rdfs:label "Shakespeare Studies" ;
+    ex:hasMinimumRoomCapacity 25 ;
+    ex:examDuration "3.0"^^xsd:decimal .
+
+ex:ECON101 a ex:Class ;
+    rdfs:label "Microeconomics" ;
+    ex:hasMinimumRoomCapacity 95 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:ECON330 a ex:Class ;
+    rdfs:label "Game Theory" ;
+    ex:hasMinimumRoomCapacity 40 ;
+    ex:examDuration "3.0"^^xsd:decimal .
+
+ex:CHEM101 a ex:Class ;
+    rdfs:label "General Chemistry" ;
+    ex:hasMinimumRoomCapacity 85 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:CHEM250 a ex:Class ;
+    rdfs:label "Organic Chemistry I" ;
+    ex:hasMinimumRoomCapacity 70 ;
+    ex:examDuration "4.0"^^xsd:decimal .
+
+ex:PSY101 a ex:Class ;
+    rdfs:label "Introduction to Psychology" ;
+    ex:hasMinimumRoomCapacity 130 ;
+    ex:examDuration "1.5"^^xsd:decimal .
+
+ex:PSY330 a ex:Class ;
+    rdfs:label "Cognitive Psychology" ;
+    ex:hasMinimumRoomCapacity 45 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:STAT200 a ex:Class ;
+    rdfs:label "Applied Statistics" ;
+    ex:hasMinimumRoomCapacity 65 ;
+    ex:examDuration "2.0"^^xsd:decimal .
+
+ex:STAT410 a ex:Class ;
+    rdfs:label "Statistical Inference" ;
+    ex:hasMinimumRoomCapacity 30 ;
+    ex:examDuration "3.0"^^xsd:decimal .
+
