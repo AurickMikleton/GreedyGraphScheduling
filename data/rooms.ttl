@@ -1,0 +1,220 @@
+@prefix ex:   <http://example.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+###############################################
+# Rooms with Highly Expanded Finals Availability
+###############################################
+
+ex:RoomA a ex:Room ;
+    rdfs:label "Main Lecture Hall" ;
+    ex:roomCapacity 125 ;
+
+    ex:hasAvailability ex:_Time_slot_00 ;
+    ex:hasAvailability ex:_Time_slot_01 ;
+    ex:hasAvailability ex:_Time_slot_03 ;
+.
+
+ex:RoomB a ex:Room ;
+    rdfs:label "Science Auditorium" ;
+    ex:roomCapacity 125 ;
+
+    ex:hasAvailability ex:_Time_slot_07 ;
+.
+
+ex:RoomC a ex:Room ;
+    rdfs:label "Engineering 201" ;
+    ex:roomCapacity 100 ;
+
+    ex:hasAvailability ex:_Time_slot_10 ;
+    ex:hasAvailability ex:_Time_slot_11 ;
+    ex:hasAvailability ex:_Time_slot_12 ;
+    ex:hasAvailability ex:_Time_slot_13 ;
+    ex:hasAvailability ex:_Time_slot_14 ;
+.
+
+ex:RoomD a ex:Room ;
+    rdfs:label "Humanities Hall 105" ;
+    ex:roomCapacity 70 ;
+
+    ex:hasAvailability ex:_Time_slot_15 ;
+    ex:hasAvailability ex:_Time_slot_16 ;
+    ex:hasAvailability ex:_Time_slot_17 ;
+    ex:hasAvailability ex:_Time_slot_18 ;
+    ex:hasAvailability ex:_Time_slot_19 ;
+.
+
+ex:RoomE a ex:Room ;
+    rdfs:label "Mathematics Seminar Room" ;
+    ex:roomCapacity 150 ;
+
+    ex:hasAvailability ex:_Time_slot_20 ;
+    ex:hasAvailability ex:_Time_slot_21 ;
+    ex:hasAvailability ex:_Time_slot_22 ;
+.
+
+ex:RoomF a ex:Room ;
+    rdfs:label "Chemistry Building 12" ;
+    ex:roomCapacity 90 ;
+
+    ex:hasAvailability ex:_Time_slot_26 ;
+    ex:hasAvailability ex:_Time_slot_28 ;
+    ex:hasAvailability ex:_Time_slot_29 ;
+.
+
+ex:RoomG a ex:Room ;
+    rdfs:label "Psychology Lecture Room" ;
+    ex:roomCapacity 80 ;
+
+    ex:hasAvailability ex:_Time_slot_30 ;
+    ex:hasAvailability ex:_Time_slot_34 ;
+.
+
+ex:RoomH a ex:Room ;
+    rdfs:label "Statistics Computer Lab" ;
+    ex:roomCapacity 50 ;
+
+    ex:hasAvailability ex:_Time_slot_36 ;
+    ex:hasAvailability ex:_Time_slot_38 ;
+.
+
+
+###############################################
+# Availability Time Slots
+###############################################
+
+# Room A
+ex:_Time_slot_00
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-11T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-11T20:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_01
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-12T12:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-12T20:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_03
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-14T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-14T20:00:00"^^xsd:dateTime ;
+.
+
+# Room B
+ex:_Time_slot_07
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-13T12:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-13T22:00:00"^^xsd:dateTime ;
+.
+
+# Room C
+ex:_Time_slot_10
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-11T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-11T18:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_11
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-12T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-12T18:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_12
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-13T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-13T18:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_13
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-14T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-14T18:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_14
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-15T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-15T18:00:00"^^xsd:dateTime ;
+.
+
+# Room D
+ex:_Time_slot_15
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-11T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-11T17:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_16
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-12T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-12T17:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_17
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-13T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-13T17:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_18
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-14T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-14T17:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_19
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-15T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-15T17:00:00"^^xsd:dateTime ;
+.
+
+# Room E
+ex:_Time_slot_20
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-11T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-11T18:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_21
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-12T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-12T18:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_22
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-13T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-13T18:00:00"^^xsd:dateTime ;
+.
+
+# Room F
+ex:_Time_slot_26
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-12T06:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-12T17:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_28
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-14T06:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-14T17:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_29
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-15T06:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-15T17:00:00"^^xsd:dateTime ;
+.
+
+# Room G
+ex:_Time_slot_30
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-11T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-11T18:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_34
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-15T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-15T20:00:00"^^xsd:dateTime ;
+.
+
+# Room H
+ex:_Time_slot_36
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-12T08:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-12T20:00:00"^^xsd:dateTime ;
+.
+ex:_Time_slot_38
+    a ex:AvailabilityTimeSlot ;
+    ex:availableFrom "2026-05-14T12:00:00"^^xsd:dateTime ;
+    ex:availableUntil "2026-05-14T20:00:00"^^xsd:dateTime ;
+.
