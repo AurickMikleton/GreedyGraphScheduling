@@ -176,7 +176,7 @@ def schedule_students_by_class(g_students: Graph) -> dict[str, list[str]]:
         #3 grouping by the students
         #4 checking schedule conflicts (
         #5 reassigning
-        
+
 
     return g_students
 
