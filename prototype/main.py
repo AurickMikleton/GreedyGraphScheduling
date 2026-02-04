@@ -9,7 +9,6 @@ from typing import Dict, List, Tuple
 
 import json
 
-
 data_directory = "../data/"
 
 EX = "http://example.org/"
@@ -42,6 +41,21 @@ def load_graph(path: Path) -> Graph:
     graph = Graph()
     graph.parse(str(path), format="turtle")
     return graph
+
+def intervals_overlap(a_start, a_end, b_start, b_end):
+    return a_start < b_end and b_start < a_end
+
+def can_place_for_students(student_intervals, students, start, end):
+    #student_intervals: dict[student_iri] -> list[(start, end)]
+    for stu in students:
+        for s, e in student_intervals.get(stu, []):
+            if intervals_overlap(s, e, start, end):
+                return False
+    return True
+
+def commit_students(student_intervals, students, start, end):
+    for stu in students:
+        student_intervals.setdefault(stu, []).append((start, end))
 
 def get_enrollment_counts(students: Graph) -> Dict[URIRef, int]:
     counts: Dict[URIRef, int] = {}
@@ -89,75 +103,85 @@ def build_courses(g_classes: Graph, enrollment_counts: Dict[URIRef, int]) -> Lis
         enrolled = enrollment_counts.get(cls_uri, 0)
 
         # per-class minimum room capacity constraint
-        min_cap = None
+        min_cap = 0
         for o in g_classes.objects(cls_uri, HAS_MIN_CAP):
             min_cap = int(o)
 
         courses.append(Course(uri=cls_uri, exam_minutes=minutes, enrollment=enrolled, min_room_capacity=min_cap))
 
-    # Greedy order - longest exams first
-    courses.sort(key=lambda c: c.exam_minutes, reverse=True)
+    # Greedy order - longest exams first. LEGACY VERSION
+    # courses.sort(key=lambda c: c.exam_minutes, reverse=True)
+    # New version ensuring a full schedule
+    courses.sort(key=lambda c: (max(c.enrollment, c.min_room_capacity or 0), c.enrollment, c.exam_minutes), reverse=True)
+
     return courses
-
-def schedule_greedy(courses: List[Course], rooms: List[Room]) -> List[dict]:
-    out: List[dict] = []
-
-    for course in courses:
-        need = max(course.enrollment, course.min_room_capacity or 0)
-
-        placed = False
-        chosen_room: Room = None
-        chosen_start: datetime = None
-        chosen_end: datetime = None
-
-        # Choose earliest placement across rooms
-        best = None
-
-        for ri, room in enumerate(rooms):
-            if room.capacity < need:
-                continue
-
-            for block_i, (a, b) in enumerate(room.free):
-                if (b - a).total_seconds() >= course.exam_minutes * 60:
-                    start = a
-                    end = a + timedelta(minutes=course.exam_minutes)
-                    cand = (start, end, ri, block_i)
-                    if best is None or cand[0] < best[0] or (cand[0] == best[0] and room.capacity < rooms[best[2]].capacity):
-                        best = cand
-
-        if best is not None:
-            start, end, ri, block_i = best
-            chosen_room = rooms[ri]
-            chosen_start = start
-            chosen_end = end
-
-            # replace [a,b] with remainder after [start,end]
-            a, b = chosen_room.free[block_i]
-            chosen_room.free.pop(block_i)
-            if end < b:
-                chosen_room.free.insert(block_i, (end, b))
-            placed = True
-
-        # temporary json output (non compliant)
-        out.append(
-            { 
-                "class": str(course.uri),
-                "room": str(chosen_room.uri) if placed and chosen_room else None,
-                "start": chosen_start.isoformat() if placed and chosen_start else None,
-                "end": chosen_end.isoformat() if placed and chosen_end else None,
-                "exam_minutes": course.exam_minutes,
-                "enrollment": course.enrollment,
-                "required_capacity": need,
-            }
-        )
-
-    return out
 
 def build_students_by_class(g_students: Graph) -> dict[str, list[str]]:
     students_by_class = {}
     for student, _, cls in g_students.triples((None, ENROLLED_IN, None)):
         students_by_class.setdefault(str(cls), []).append(str(student))
     return students_by_class
+
+def schedule_greedy(courses: List[Course], rooms: List[Room], students_by_class: Dict[str, List[str]]):
+    student_intervals: Dict[str, List[Tuple[datetime, datetime]]] = {}
+    schedule = []
+
+    for course in courses:
+        cls_key = str(course.uri)
+        mins = course.exam_minutes
+        # required seats = max(enrollment, min_room_capacity)
+        need = max(course.enrollment, course.min_room_capacity or 0)
+
+        students = students_by_class.get(cls_key, [])
+
+        best = None  # (start, end, room_index, block_index)
+
+        for room_index, room in enumerate(rooms):
+            if room.capacity < need:
+                continue
+
+            for block_index, (a, b) in enumerate(room.free):
+                if (b - a).total_seconds() < mins * 60:
+                    continue
+
+                start = a
+                end = a + timedelta(minutes=mins)
+
+                if not can_place_for_students(student_intervals, students, start, end):
+                    continue
+
+                cand = (start, end, room_index, block_index)
+                if best is None or cand[0] < best[0]:
+                    best = cand
+
+        if best is None:
+            schedule.append({
+                "class": cls_key,
+                "room": None,
+                "start": None,
+                "end": None
+            })
+            continue
+
+        start, end, room_index, block_index = best
+        room = rooms[room_index]
+
+        # update room free blocks
+        a, b = room.free[block_index]
+        room.free.pop(block_index)
+        if end < b:
+            room.free.insert(block_index, (end, b))
+
+        commit_students(student_intervals, students, start, end)
+
+        schedule.append({
+            "class": cls_key,
+            "room": str(room.uri),
+            "start": start.isoformat(),
+            "end": end.isoformat()
+        })
+
+    return schedule
 
 def main() -> None:
     students_path = data_directory + "students.ttl"
@@ -175,18 +199,15 @@ def main() -> None:
     rooms_list = get_rooms(rooms) 
     # Courses list -> List[Course]
     courses_list = build_courses(classes, enrollment_counts) 
+    # Students by Class -> Dict[str, List[str]]
+    students_by_class = build_students_by_class(students)
 
     # Greedy algorithm
-    schedule = schedule_greedy(courses_list, rooms_list)
-
-    # Add students to groups
-    # TODO does not prevent students from having overlapping exams
-    students_by_class = build_students_by_class(students)
+    schedule = schedule_greedy(courses_list, rooms_list, students_by_class)
 
     groups = {}
     counter = 1
 
-    # Correct the json for automatic testing compliance
     for item in schedule:
         if item["room"] is None:
             continue
@@ -209,7 +230,7 @@ def main() -> None:
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(groups, f, indent=2)
 
-
+    # Diagnoses test statements
     scheduled = sum(1 for x in schedule if x["room"] is not None)
     unscheduled = len(schedule) - scheduled
     print(f"Wrote {out_path} | scheduled={scheduled} unscheduled={unscheduled}")
