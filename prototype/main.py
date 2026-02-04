@@ -23,6 +23,14 @@ AVAILABLE_FROM = URIRef(EX + "availableFrom")
 AVAILABLE_UNTIL = URIRef(EX + "availableUntil")
 
 @dataclass
+class Student:
+    uri: URIRef
+    name: str
+    classes: [str]
+    #schedule: []
+
+
+@dataclass
 class Room:
     uri: URIRef
     capacity: int
@@ -96,6 +104,7 @@ def build_courses(g_classes: Graph, enrollment_counts: Dict[URIRef, int]) -> Lis
         courses.append(Course(uri=cls_uri, exam_minutes=minutes, enrollment=enrolled, min_room_capacity=min_cap))
 
     # Greedy order - longest exams first
+    #change to students enrolled
     courses.sort(key=lambda c: c.exam_minutes, reverse=True)
     return courses
 
@@ -159,6 +168,19 @@ def build_students_by_class(g_students: Graph) -> dict[str, list[str]]:
         students_by_class.setdefault(str(cls), []).append(str(student))
     return students_by_class
 
+def schedule_students_by_class(g_students: Graph) -> dict[str, list[str]]:
+    #
+    for classes,students in g_students.items():
+        #1 single course, list of students
+        #2 map the student object to the list by name
+        #3 grouping by the students
+        #4 checking schedule conflicts (
+        #5 reassigning
+        
+
+    return g_students
+
+
 def main() -> None:
     students_path = data_directory + "students.ttl"
     classes_path = data_directory + "classes.ttl"
@@ -178,10 +200,11 @@ def main() -> None:
 
     # Greedy algorithm
     schedule = schedule_greedy(courses_list, rooms_list)
-
     # Add students to groups
     # TODO does not prevent students from having overlapping exams
     students_by_class = build_students_by_class(students)
+
+    final_schedule = schedule_students_by_class(students_by_class)
 
     groups = {}
     counter = 1
