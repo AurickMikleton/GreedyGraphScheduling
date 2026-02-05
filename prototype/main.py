@@ -1,6 +1,4 @@
 from rdflib import Graph, URIRef
-from itertools import groupby
-from operator import itemgetter
 from datetime import datetime, timedelta
 from dataclasses import dataclass
 
