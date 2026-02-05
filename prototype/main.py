@@ -1,13 +1,11 @@
 from rdflib import Graph, URIRef
-from itertools import groupby
-from operator import itemgetter
 from datetime import datetime, timedelta
 from dataclasses import dataclass
-
 from pathlib import Path
 from typing import Dict, List, Tuple
 
 import json
+import bisect
 
 data_directory = "../data/"
 
@@ -46,11 +44,28 @@ def intervals_overlap(a_start, a_end, b_start, b_end):
     return a_start < b_end and b_start < a_end
 
 def can_place_for_students(student_intervals, students, start, end):
+
     #student_intervals: dict[student_iri] -> list[(start, end)]
+    #current search time is in O(n) can be reduced to O(log n)
+    #this is by implementing a bisection technique which cuts open the intervals
+    #and asserts whether and exam can fit in the allotted time or not
+
     for stu in students:
-        for s, e in student_intervals.get(stu, []):
-            if intervals_overlap(s, e, start, end):
+        intervals = student_intervals.get(stu)
+        if not intervals:
+            continue
+
+        i = bisect.bisect_right(intervals, (start, end))
+
+        if i > 0:
+            prev_start, prev_end = intervals[i - 1]
+            if prev_end > start:
                 return False
+        if i < len(intervals):
+            next_start, next_end = intervals[i]
+            if end > next_start:
+                return False
+
     return True
 
 def commit_students(student_intervals, students, start, end):
@@ -138,10 +153,13 @@ def schedule_greedy(courses: List[Course], rooms: List[Room], students_by_class:
 
         for room_index, room in enumerate(rooms):
             if room.capacity < need:
+                #break case if more students need room than available
                 continue
 
             for block_index, (a, b) in enumerate(room.free):
+                #goes through free rooms
                 if (b - a).total_seconds() < mins * 60:
+                    #checking a time condition
                     continue
 
                 start = a
@@ -151,7 +169,7 @@ def schedule_greedy(courses: List[Course], rooms: List[Room], students_by_class:
                     continue
 
                 cand = (start, end, room_index, block_index)
-                if best is None or cand[0] < best[0]:
+                if best is None or cand[0] < best[0]: #what is the extra condition here
                     best = cand
 
         if best is None:
