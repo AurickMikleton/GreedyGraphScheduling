@@ -6,6 +6,7 @@ from typing import Dict, List, Tuple
 
 import json
 import bisect
+import time
 
 data_directory = "../data/"
 
@@ -140,7 +141,7 @@ def build_students_by_class(g_students: Graph) -> dict[str, list[str]]:
 def schedule_greedy(courses: List[Course], rooms: List[Room], students_by_class: Dict[str, List[str]]):
     student_intervals: Dict[str, List[Tuple[datetime, datetime]]] = {}
     schedule = []
-
+    prev_time = time.time_ns()
     for course in courses:
         cls_key = str(course.uri)
         mins = course.exam_minutes
@@ -198,6 +199,9 @@ def schedule_greedy(courses: List[Course], rooms: List[Room], students_by_class:
             "start": start.isoformat(),
             "end": end.isoformat()
         })
+    current_time = time.time_ns()
+    time_optimimum = current_time - prev_time
+    print('total time for optimized scheduling', (time_optimimum/1000000000), 's')
 
     return schedule
 
