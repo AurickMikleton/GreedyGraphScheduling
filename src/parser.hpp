@@ -15,6 +15,9 @@ struct Triple {
 // I do not believe this is an actuall graph datastructure
 class Graph {
 private:
+    std::vector<std::string> m_tokens;
+    size_t m_class_index = 0;
+private:
     // 32% that these function stubs will be right
     static std::string read_all(const std::string& filepath);
     static void remove_comments_inplace(std::string& contents);
@@ -23,11 +26,11 @@ private:
     bool peek(const std::string& token) const;
     std::string next();
     void expect(const std::string& token);
-    void parse_prefixed();
+    void parse_prefixes();
     std::string expand_term(const std::string& token);
     std::string parse_object();
     std::vector<Triple> parse_triples();
 public:
-    static std::unique_ptr<Graph> parse_file(std::string filepath);
+    std::vector<Triple> parse_file(const std::string& filepath);
     std::unordered_map<std::string, std::string> m_prefixes;
 };
