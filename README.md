@@ -5,7 +5,7 @@ Greedy Graph Scheduling for DevNet
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#pre"> -- Prepocessing --</a></li>
+    <li><a href="[#pre](https://github.com/AurickMikleton/GreedyGraphScheduling/tree/main/prototype)"> -- Python Code --</a></li>
     <ol type="a">
     <li><a href="#Notebook1"> ➤ Data Loading</a></li>
     </ol>
