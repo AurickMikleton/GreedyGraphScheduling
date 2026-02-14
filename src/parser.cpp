@@ -8,6 +8,7 @@ std::string Graph::read_all(const std::string& filepath) {
     std::ifstream in(filepath, std::ios::binary);
     if (!in) throw std::runtime_error("Failed to open: " + filepath);
     std::string s((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+    std::cout << "yipee\n";
     return s;
 }
 
@@ -171,18 +172,47 @@ std::string Graph::parse_object() {
 
 std::vector<Triple> Graph::parse_triples() {
     std::vector<Triple> out;
+
     while (m_class_index < m_tokens.size()) {
         std::string subject = expand_term(next());
-        std::string predicate = expand_term(next());
-        std::string object = parse_object();
 
-        // Must end with '.', my parser is buns
-        std::string end = next();
-        if (end != ".") {
-            throw std::runtime_error("Expects triples ending with '.'");
+        bool done_subject = false;
+        while (!done_subject) {
+            std::string predicate = expand_term(next());
+
+            bool done_predicate = false;
+            while (!done_predicate) {
+                std::string object = parse_object();
+                out.push_back({subject, predicate, object});
+
+                // After an object expect ',', ';', or '.'
+                std::string sep = next();
+
+                if (sep == ",") {
+                    // same subject, same predicate, another object
+                    continue;
+                }
+
+                if (sep == ";") {
+                    // same subject, new predicate
+                    done_predicate = true;
+                    if (peek(".")) {
+                        next(); // consume '.'
+                        done_subject = true;
+                    }
+                    break;
+                }
+
+                if (sep == ".") {
+                    // end of subject
+                    done_predicate = true;
+                    done_subject = true;
+                    break;
+                }
+
+                throw std::runtime_error("Expected one of ',', ';', '.' after object, got '" + sep + "'");
+            }
         }
-
-        out.push_back({subject, predicate, object});
     }
 
     return out;
@@ -199,7 +229,13 @@ std::vector<Triple> Graph::parse_file(const std::string& filepath) {
 
 int main() {
     Graph students_graph;
-    std::vector<Triple> triples = students_graph.parse_file(classes_path);
+    std::vector<Triple> triples = students_graph.parse_file(students_path);
+
+    int enrolled = 0;
+    for (auto& t : triples) {
+        if (t.predicate.find("enrolledIn") != std::string::npos) enrolled++;
+    }
+    std::cout << "enrolledIn triples: " << enrolled << "\n";
 
     std::cout << "Triples: " << triples.size() << "\n";
     for (size_t i = 0; i < std::min<size_t>(triples.size(), 10); ++i) {
