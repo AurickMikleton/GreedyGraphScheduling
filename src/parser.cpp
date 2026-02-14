@@ -8,25 +8,35 @@ std::string Graph::read_all(const std::string& filepath) {
     std::ifstream in(filepath, std::ios::binary);
     if (!in) throw std::runtime_error("Failed to open: " + filepath);
     std::string s((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
-    std::cout << "yipee\n";
     return s;
 }
+
 
 void Graph::remove_comments_inplace(std::string& contents) {
     std::string out;
     out.reserve(contents.size());
+
     bool in_string = false;
+    bool in_iri = false;
 
     for (size_t index = 0; index < contents.size(); ++index) {
         char c = contents[index];
 
-        if (c == '"' && (index == 0 || contents[index - 1] != '\\')) {
+        // Track entering/leaving IRI blocks
+        if (!in_string) {
+            if (c == '<') in_iri = true;
+            else if (c == '>') in_iri = false;
+        }
+
+        // Track entering/leaving string literals
+        if (!in_iri && c == '"' && (index == 0 || contents[index - 1] != '\\')) {
             in_string = !in_string;
             out.push_back(c);
             continue;
         }
 
-        if (!in_string && c == '#') {
+        // Only treat # as comment when not inside string or iri
+        if (!in_string && !in_iri && c == '#') {
             while (index < contents.size() && contents[index] != '\n') index++;
             if (index < contents.size()) out.push_back('\n');
             continue;
@@ -37,6 +47,7 @@ void Graph::remove_comments_inplace(std::string& contents) {
 
     contents.swap(out);
 }
+
 
 void Graph::tokenize(const std::string& contents) {
     m_tokens.clear();
@@ -227,22 +238,22 @@ std::vector<Triple> Graph::parse_file(const std::string& filepath) {
     return this->Graph::parse_triples();
 }
 
-int main() {
-    Graph students_graph;
-    std::vector<Triple> triples = students_graph.parse_file(students_path);
-
-    int enrolled = 0;
-    for (auto& t : triples) {
-        if (t.predicate.find("enrolledIn") != std::string::npos) enrolled++;
-    }
-    std::cout << "enrolledIn triples: " << enrolled << "\n";
-
-    std::cout << "Triples: " << triples.size() << "\n";
-    for (size_t i = 0; i < std::min<size_t>(triples.size(), 10); ++i) {
-        std::cout << triples[i].subject << "\n  "
-            << triples[i].predicate << "\n  "
-            << triples[i].object << "\n\n";
-    }
-}
-
-
+//int main() {
+//    Graph students_graph;
+//    std::vector<Triple> triples = students_graph.parse_file(students_path);
+//
+//    int enrolled = 0;
+//    for (auto& t : triples) {
+//        if (t.predicate.find("enrolledIn") != std::string::npos) enrolled++;
+//    }
+//    std::cout << "enrolledIn triples: " << enrolled << "\n";
+//
+//    std::cout << "Triples: " << triples.size() << "\n";
+//    for (size_t i = 0; i < std::min<size_t>(triples.size(), 10); ++i) {
+//        std::cout << triples[i].subject << "\n  "
+//            << triples[i].predicate << "\n  "
+//            << triples[i].object << "\n\n";
+//    }
+//}
+//
+//
