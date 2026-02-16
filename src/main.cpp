@@ -446,23 +446,25 @@ int main() {
 
         auto fut_students = std::async(std::launch::async, [&] {
             return g1.parse_file(students_path);
+
         });
         auto fut_classes = std::async(std::launch::async, [&] {
             return g2.parse_file(classes_path);
         });
         auto fut_rooms = std::async(std::launch::async, [&] {
-            return g3.parse_file(rooms_path);
+            auto rooms_triples =  g3.parse_file(rooms_path);
+            return get_rooms(rooms_triples);
         });
 
         // .get() will rethrow any exception that happened in the thread
         auto students_triples = fut_students.get();
         auto classes_triples  = fut_classes.get();
-        auto rooms_triples    = fut_rooms.get(); 
+
+        auto rooms = fut_rooms.get(); 
 
         auto enrollment_counts = get_enrollment_counts(students_triples);
         auto students_by_class = build_students_by_class(students_triples);
 
-        auto rooms = get_rooms(rooms_triples);
         auto courses = build_courses(classes_triples, enrollment_counts);
 
         auto schedule = schedule_greedy(courses, rooms, students_by_class);
