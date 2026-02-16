@@ -9,7 +9,7 @@ Greedy Graph Scheduling for DevNet
     <ol type="a">
     <li> ➤Projects Python code, including validator, GUI and greedy scheduling algorithim </li>
     </ol>
-    <li><a href="#CNNs"> -- CPP Code --</a></li>
+    <li><a href="https://github.com/AurickMikleton/GreedyGraphScheduling/tree/main/src"> -- CPP Code --</a></li>
     <ol type="a">
     <li> ➤CPP code, including the scheduling algorithim and timing compononents </li>
     </ol>
@@ -27,6 +27,6 @@ Greedy Graph Scheduling for DevNet
 
 
 <h2 id="TheEnd"> :checkered_flag: The End </h2>
-<a href="https://www.linkedin.com/company/devnetcsu">DevNe</a>
+<a href="https://www.linkedin.com/company/devnetcsu">DevNet</a>
 
 <a href="#top">:point_up_2:</a>
