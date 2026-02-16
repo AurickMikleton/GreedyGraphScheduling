@@ -7,22 +7,15 @@ Greedy Graph Scheduling for DevNet
   <ol>
     <li><a href="[#pre](https://github.com/AurickMikleton/GreedyGraphScheduling/tree/main/prototype)"> -- Python Code --</a></li>
     <ol type="a">
-    <li><a href="#Notebook1"> ➤ Data Loading</a></li>
+    <li> ➤Projects Python code, including validator, GUI and greedy scheduling algorithim </li>
     </ol>
-    <li><a href="#CNNs"> -- CNN --</a></li>
+    <li><a href="#CNNs"> -- CPP Code --</a></li>
     <ol type="a">
-    <li><a href="#Notebook2"> ➤ CNN Kernal building</a></li>
-     <li><a href="#Notebook3"> ➤ CNN Min Max Pooling/a></li>
+    <li> ➤CPP code, including the scheduling algorithim and timing compononents </li>
     </ol>
      <li><a href="#TheEnd"> ➤ The end </a></li>
   </ol>
 </details>
-
-<h2 id="pre"> :gear: Preprocessing </h2>
-<hr style="border: 1px solid black; width: 50%;">
-<h3 id="Notebook1"> :pencil: Data Loading</h3>
-<p> This portion is for loading code </p>
-<a href="">Notebook 1</a>
 
 
 <h2 id="CNNs"> :milky_way: Greedy Algorithim</h2>
