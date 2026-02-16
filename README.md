@@ -5,7 +5,7 @@ Greedy Graph Scheduling for DevNet
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="[#pre](https://github.com/AurickMikleton/GreedyGraphScheduling/tree/main/prototype)"> -- Python Code --</a></li>
+    <li><a href="https://github.com/AurickMikleton/GreedyGraphScheduling/tree/main/prototype"> -- Python Code --</a></li>
     <ol type="a">
     <li> ➤Projects Python code, including validator, GUI and greedy scheduling algorithim </li>
     </ol>
