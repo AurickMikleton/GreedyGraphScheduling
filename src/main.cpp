@@ -291,8 +291,6 @@ schedule_greedy(const std::vector<Course>& courses,
     std::vector<ScheduledItem> schedule;
     schedule.reserve(courses.size());
 
-    auto t0 = std::chrono::high_resolution_clock::now();
-
     for (const auto& course : courses) {
         const std::string& cls = course.uri;
         int mins = course.exam_minutes;
@@ -351,10 +349,6 @@ schedule_greedy(const std::vector<Course>& courses,
 
         schedule.push_back({cls, room.uri, best_start, best_end});
     }
-
-    auto t1 = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> dt = t1 - t0;
-    std::cout << "total time for optimized scheduling " << dt.count() << " s\n";
 
     return schedule;
 }
@@ -472,13 +466,6 @@ int main() {
         // JSON output
         write_schedule_json(out_path, schedule, students_by_class);
 
-        // diagnostics
-        int scheduled = 0;
-        for (auto& s : schedule) if (!s.room_iri.empty()) scheduled++;
-        int unscheduled = (int)schedule.size() - scheduled;
-
-        std::cout << "Wrote " << out_path << " | scheduled=" << scheduled
-                  << " unscheduled=" << unscheduled << "\n";
     }
     catch (const std::exception& e) {
         std::cerr << "ERROR: " << e.what() << "\n";
