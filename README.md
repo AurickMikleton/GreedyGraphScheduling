@@ -20,17 +20,11 @@ Greedy Graph Scheduling for DevNet
 
 <h2 id="CNNs"> :milky_way: Greedy Algorithim</h2>
 <hr style="border: 1px solid black; width: 50%;">
-<h3 id="Notebook2"> :pencil: CNN Kernel building</h3>
 <p> </p>
 <a href="">
 
 </a>
 
-<h3 id="Notebook3"> :pencil: Results</h3>
-<p> </p>
-<a href="">
-
-</a>
 
 <h2 id="TheEnd"> :checkered_flag: The End </h2>
 <a href="https://www.linkedin.com/company/devnetcsu">DevNe</a>
