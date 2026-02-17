@@ -1,7 +1,5 @@
 #include <algorithm>
 #include <chrono>
-#include <cctype>
-#include <cstdint>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
@@ -112,27 +110,6 @@ struct Course {
     int enrollment = 0;
     int min_room_capacity = 0;
 };
-
-static std::unordered_map<std::string, int> get_enrollment_counts(const std::vector<Triple>& student_triples) {
-    std::unordered_map<std::string, int> counts;
-    for (const auto& t : student_triples) {
-        if (t.predicate == ENROLLED_IN) {
-            counts[t.object] += 1; // object is class IRI
-        }
-    }
-    return counts;
-}
-
-static std::unordered_map<std::string, std::vector<std::string>>
-build_students_by_class(const std::vector<Triple>& student_triples) {
-    std::unordered_map<std::string, std::vector<std::string>> by_class;
-    for (const auto& t : student_triples) {
-        if (t.predicate == ENROLLED_IN) {
-            by_class[t.object].push_back(t.subject);
-        }
-    }
-    return by_class;
-}
 
 static std::vector<Room>
 get_rooms(const std::vector<Triple>& room_triples) {
@@ -273,6 +250,24 @@ static void commit_students(
         auto pos = std::upper_bound(vec.begin(), vec.end(), std::make_pair(start,end));
         vec.insert(pos, {start,end}); // keeps sorted
     }
+}
+
+struct StundentDerived {
+    std::unordered_map<std::string,int> enrollment_counts;
+    std::unordered_map<std::string,std::vector<std::string>> students_by_class; 
+};
+
+static StundentDerived build_student_derivations(const std::vector<Triple>& student_triples) {
+    StundentDerived out;
+
+    for (const auto& triple : student_triples) {
+        if(triple.predicate == ENROLLED_IN) {
+            out.enrollment_counts[triple.object] += 1;
+            out.students_by_class[triple.object].push_back(triple.subject);
+        }
+    }
+
+    return out;
 }
 
 struct ScheduledItem {
@@ -439,7 +434,9 @@ int main() {
         Graph g1, g2, g3;
 
         auto fut_students = std::async(std::launch::async, [&] {
-            return g1.parse_file(students_path);
+            StundentDerived out;
+            auto student_triples = g1.parse_file(students_path);
+            return build_student_derivations(student_triples);
 
         });
         auto fut_classes = std::async(std::launch::async, [&] {
@@ -451,20 +448,20 @@ int main() {
         });
 
         // .get() will rethrow any exception that happened in the thread
-        auto students_triples = fut_students.get();
+        auto student_derived = fut_students.get();
         auto classes_triples  = fut_classes.get();
 
         auto rooms = fut_rooms.get(); 
 
-        auto enrollment_counts = get_enrollment_counts(students_triples);
-        auto students_by_class = build_students_by_class(students_triples);
+        //auto enrollment_counts = get_enrollment_counts(students_triples);
+        //auto students_by_class = build_students_by_class(students_triples);
 
-        auto courses = build_courses(classes_triples, enrollment_counts);
+        auto courses = build_courses(classes_triples, student_derived.enrollment_counts);
 
-        auto schedule = schedule_greedy(courses, rooms, students_by_class);
+        auto schedule = schedule_greedy(courses, rooms, student_derived.students_by_class);
 
         // JSON output
-        write_schedule_json(out_path, schedule, students_by_class);
+        write_schedule_json(out_path, schedule, student_derived.students_by_class);
 
     }
     catch (const std::exception& e) {
