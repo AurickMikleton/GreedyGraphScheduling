@@ -1,49 +1,70 @@
-import os
-import main
-from tkinter import *
 import time
+import webbrowser
+from tkinter import *
 
-# create root window
-root = Tk()
+import main
 
-T = Text(root, height=5, width=52)
-T.pack()
-T.insert('1.0', "Waiting to run", "center")
 
-root.title("Greedy Scheduling Algorithm")
-root.geometry('350x200')
+def run_once():
+    output.delete('1.0', END)
+    output.insert(END, "running")
+    root.update()
 
-lbl = Label(root, text="Greedy Scheduling Algorithm")
-lbl.pack()
-
-def clicked_once():
-    T.delete('1.0', END)
-    T.insert(END, "running")
-    prev_time = time.time_ns()
+    start = time.time_ns()
     main.main()
-    current_time = time.time_ns()
-    time_optimum = (current_time - prev_time) / 1_000_000_000  # convert to seconds
-    T.delete('1.0', END)
-    T.insert(END, "code ran in " + str(time_optimum) + " seconds")
+    elapsed = (time.time_ns() - start) / 1_000_000_000
 
-def clicked_one_hundred():
-    T.delete('1.0', END)
-    T.insert(END, "running")
-    prev_time = time.time_ns()
-    for i in range(100):
+    output.delete('1.0', END)
+    output.insert(END, f"code ran in {elapsed:.4f} seconds")
+
+
+def run_hundred():
+    output.delete('1.0', END)
+    output.insert(END, "running")
+    root.update()
+
+    start = time.time_ns()
+    for _ in range(100):
         main.main()
-    current_time = time.time_ns()
-    time_optimum = (current_time - prev_time) / 1_000_000_000  # convert to seconds
-    T.delete('1.0', END)
-    T.insert(END, "100 iterations ran in " + str(time_optimum) + " seconds\n")
-    T.insert(END, "\nAverage time: " + str(time_optimum/100) + " seconds")
+    elapsed = (time.time_ns() - start) / 1_000_000_000
+
+    output.delete('1.0', END)
+    output.insert(END, f"100 iterations ran in {elapsed:.4f} seconds\n")
+    output.insert(END, f"\nAverage time: {elapsed / 100:.4f} seconds")
 
 
-btn = Button(root, text="Run Scheduler", fg="red", command=clicked_once)
-btn2 = Button(root, text="Run Scheduler 100 times", fg="red", command=clicked_one_hundred)
+def open_repo(event):
+    webbrowser.open_new_tab("https://github.com/AurickMikleton/GreedyGraphScheduling")
 
 
-btn.pack()
-btn2.pack()
+root = Tk()
+root.title("Greedy Scheduling Algorithm")
+root.geometry('350x300')
+
+frame = Frame(root, padx=10, pady=10)
+frame.place(relx=0.5, rely=0.5, anchor='center')
+
+Label(
+    frame,
+    text="Greedy Scheduling Algorithm",
+    bg="lightblue",
+    font=("Comic Sans", 15, "bold"),
+    fg="red",
+    padx=10,
+    pady=10,
+    relief="raised",
+    wraplength=250
+).pack()
+
+output = Text(frame, height=5, width=40)
+output.pack(pady=5)
+output.insert('1.0', "Waiting to run")
+
+Button(frame, text="Run Scheduler", fg="red", command=run_once, cursor="hand2").pack(pady=2)
+Button(frame, text="Run Scheduler 100 times", fg="red", command=run_hundred, cursor="hand2").pack(pady=2)
+
+repo_link = Label(frame, text="Click here for the full project repo", bg="#3A7FF6", fg="white", cursor="hand2")
+repo_link.pack(pady=5)
+repo_link.bind('<Button-1>', open_repo)
 
 root.mainloop()
