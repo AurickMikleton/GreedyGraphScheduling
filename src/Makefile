@@ -1,4 +1,4 @@
-CLANG = clang
+CLANG = g++
 
 CFLAGS = -g -Wall -Iinclude -std=c++17 -O3
 
