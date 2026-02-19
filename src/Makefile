@@ -1,6 +1,6 @@
-CLANG = g++
+CLANG = clang
 
-CFLAGS = -g -Wall -std=c++17 -O3
+CFLAGS = -g -Wall -Iinclude -std=c++17 -O3
 
 TARGET = main.exe
 SOURCE = *.cpp
