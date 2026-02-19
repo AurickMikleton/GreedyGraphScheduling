@@ -4,6 +4,7 @@
 
 #include <string>
 #include <unordered_map>
+#include <tsl/hopscotch_map.h>
 #include <vector>
 
 struct Triple {
@@ -32,5 +33,5 @@ private:
     std::vector<Triple> parse_triples();
 public:
     std::vector<Triple> parse_file(const std::string& filepath);
-    std::unordered_map<std::string, std::string> m_prefixes;
+    tsl::hopscotch_map<std::string, std::string> m_prefixes;
 };
