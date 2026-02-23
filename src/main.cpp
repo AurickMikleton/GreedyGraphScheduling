@@ -6,7 +6,9 @@
 #include <sstream>
 #include <stdexcept>
 #include <string>
-#include <unordered_map>
+// remove when converted
+//#include <unordered_map>
+#include <tsl/hopscotch_map.h>
 #include <utility>
 #include <vector>
 #include <future>
@@ -114,7 +116,7 @@ struct Course {
 static std::vector<Room>
 get_rooms(const std::vector<Triple>& room_triples) {
     // First: map room -> capacity
-    std::unordered_map<std::string, int> cap;
+    tsl::hopscotch_map<std::string, int> cap;
     for (const auto& t : room_triples) {
         if (t.predicate == ROOM_CAPACITY) {
             cap[t.subject] = std::stoi(t.object);
@@ -122,7 +124,7 @@ get_rooms(const std::vector<Triple>& room_triples) {
     }
 
     // Second: map room -> slot nodes
-    std::unordered_map<std::string, std::vector<std::string>> room_slots;
+    tsl::hopscotch_map<std::string, std::vector<std::string>> room_slots;
     for (const auto& t : room_triples) {
         if (t.predicate == HAS_AVAILABILITY) {
             room_slots[t.subject].push_back(t.object);
@@ -130,8 +132,8 @@ get_rooms(const std::vector<Triple>& room_triples) {
     }
 
     // Third: slot -> from/until
-    std::unordered_map<std::string, std::string> slot_from;
-    std::unordered_map<std::string, std::string> slot_until;
+    tsl::hopscotch_map<std::string, std::string> slot_from;
+    tsl::hopscotch_map<std::string, std::string> slot_until;
 
     for (const auto& t : room_triples) {
         if (t.predicate == AVAILABLE_FROM)  slot_from[t.subject]  = t.object;
@@ -175,10 +177,10 @@ get_rooms(const std::vector<Triple>& room_triples) {
 
 static std::vector<Course>
 build_courses(const std::vector<Triple>& class_triples,
-              const std::unordered_map<std::string,int>& enrollment_counts) {
+              const tsl::hopscotch_map<std::string,int>& enrollment_counts) {
     // class -> durationHours, class -> minCap
-    std::unordered_map<std::string, double> dur_hours;
-    std::unordered_map<std::string, int> min_cap;
+    tsl::hopscotch_map<std::string, double> dur_hours;
+    tsl::hopscotch_map<std::string, int> min_cap;
 
     for (const auto& t : class_triples) {
         if (t.predicate == EXAM_DURATION) {
@@ -215,7 +217,7 @@ build_courses(const std::vector<Triple>& class_triples,
 }
 
 static bool can_place_for_students(
-    const std::unordered_map<std::string, std::vector<std::pair<int64_t,int64_t>>>& student_intervals,
+    const tsl::hopscotch_map<std::string, std::vector<std::pair<int64_t,int64_t>>>& student_intervals,
     const std::vector<std::string>& students,
     int64_t start, int64_t end
 ) {
@@ -241,7 +243,7 @@ static bool can_place_for_students(
 }
 
 static void commit_students(
-    std::unordered_map<std::string, std::vector<std::pair<int64_t,int64_t>>>& student_intervals,
+    tsl::hopscotch_map<std::string, std::vector<std::pair<int64_t,int64_t>>>& student_intervals,
     const std::vector<std::string>& students,
     int64_t start, int64_t end
 ) {
@@ -253,8 +255,8 @@ static void commit_students(
 }
 
 struct StundentDerived {
-    std::unordered_map<std::string,int> enrollment_counts;
-    std::unordered_map<std::string,std::vector<std::string>> students_by_class; 
+    tsl::hopscotch_map<std::string,int> enrollment_counts;
+    tsl::hopscotch_map<std::string,std::vector<std::string>> students_by_class; 
 };
 
 static StundentDerived build_student_derivations(const std::vector<Triple>& student_triples) {
@@ -280,11 +282,12 @@ struct ScheduledItem {
 static std::vector<ScheduledItem>
 schedule_greedy(const std::vector<Course>& courses,
                 std::vector<Room>& rooms, // mutated (free blocks shrink)
-                const std::unordered_map<std::string, std::vector<std::string>>& students_by_class) {
+                const tsl::hopscotch_map<std::string, std::vector<std::string>>& students_by_class) {
 
-    std::unordered_map<std::string, std::vector<std::pair<int64_t,int64_t>>> student_intervals;
+    tsl::hopscotch_map<std::string, std::vector<std::pair<int64_t,int64_t>>> student_intervals;
     std::vector<ScheduledItem> schedule;
     schedule.reserve(courses.size());
+    auto t0 = std::chrono::high_resolution_clock::now(); 
 
     for (const auto& course : courses) {
         const std::string& cls = course.uri;
@@ -345,6 +348,10 @@ schedule_greedy(const std::vector<Course>& courses,
         schedule.push_back({cls, room.uri, best_start, best_end});
     }
 
+    auto t1 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> dt = t1 - t0;
+    std::cout << "total time for scheduling " << dt.count() << " s\n";
+
     return schedule;
 }
 
@@ -373,7 +380,7 @@ static std::string json_escape(const std::string& s) {
 static void write_schedule_json(
     const std::string& out_path,
     const std::vector<ScheduledItem>& schedule,
-    const std::unordered_map<std::string, std::vector<std::string>>& students_by_class
+    const tsl::hopscotch_map<std::string, std::vector<std::string>>& students_by_class
 ) {
     std::ofstream out(out_path);
     if (!out) throw std::runtime_error("Failed to write: " + out_path);
