@@ -2,6 +2,8 @@
 <p id="top"></p>
 Greedy Graph Scheduling for DevNet
 
+<p> <a href= "https://www.canva.com/design/DAHCNhwigfw/G2vhluhQnNQPtwjig7g6VA/edit?utm_content=DAHCNhwigfw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"></a></p>
+
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
